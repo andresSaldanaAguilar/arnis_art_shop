@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/arnis_art_shop/static/css/main.f855e6bc.css",
+    "main.js": "/arnis_art_shop/static/js/main.813c84a6.js",
+    "index.html": "/arnis_art_shop/index.html",
+    "main.f855e6bc.css.map": "/arnis_art_shop/static/css/main.f855e6bc.css.map",
+    "main.813c84a6.js.map": "/arnis_art_shop/static/js/main.813c84a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.813c84a6.js"
+  ]
+}
