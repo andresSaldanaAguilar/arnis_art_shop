@@ -1,22 +1,24 @@
 # My React App
 
-This is a React application built with TypeScript. It serves as a template for creating scalable and maintainable React applications.
+This is a React application built with TypeScript, designed to be deployed on GitHub Pages.
 
 ## Project Structure
 
 ```
 my-react-app
+├── public
+│   ├── index.html        # Main HTML file
+│   └── favicon.ico       # Favicon for the application
 ├── src
 │   ├── components
-│   │   └── App.tsx        # Main application component
-│   ├── index.tsx          # Entry point of the application
-│   └── types
-│       └── index.ts       # Type definitions for the application
-├── public
-│   ├── index.html         # Main HTML file
-├── package.json           # npm configuration file
-├── tsconfig.json          # TypeScript configuration file
-└── README.md              # Project documentation
+│   │   └── App.tsx       # Main component of the application
+│   ├── index.tsx         # Entry point of the React application
+│   └── react-app-env.d.ts # TypeScript declarations for the React app environment
+├── .gitignore            # Specifies files to ignore by Git
+├── package.json          # Configuration file for npm
+├── tsconfig.json         # TypeScript configuration file
+├── README.md             # Documentation for the project
+└── gh-pages.yml          # GitHub Actions workflow for deployment
 ```
 
 ## Getting Started
@@ -25,7 +27,7 @@ To get started with this project, follow these steps:
 
 1. **Clone the repository:**
    ```
-   git clone <repository-url>
+   git clone https://github.com/your-username/my-react-app.git
    cd my-react-app
    ```
 
@@ -39,11 +41,19 @@ To get started with this project, follow these steps:
    npm start
    ```
 
-The application will be available at `http://localhost:3000`.
+4. **Build the application for deployment:**
+   ```
+   npm run build
+   ```
+
+5. **Deploy to GitHub Pages:**
+   ```
+   npm run deploy
+   ```
 
 ## Usage
 
-This application is structured to allow easy modification and extension. You can add new components in the `src/components` directory and define additional types in `src/types`.
+After running the application, you can access it at `http://localhost:3000`. The main component is located in `src/components/App.tsx`, where you can modify the application logic and UI.
 
 ## License
 
