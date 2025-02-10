@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.grid-container {
+  margin: 0px 0px 1000px 0px;
+}
+
+.body-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #928b83;
+  background-color: #faebd7;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}

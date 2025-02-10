@@ -1,0 +1,34 @@
+img[src$=".jpg"] {
+  box-shadow: 5px 5px 15px #928b83; /* Casting shadow from bottom right to top left */
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  transform: rotate(-2deg); /* Slight rotation for artistic effect */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  width: 60%; /* Make the image take full width of its container */
+  max-width: 600px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+img[src$=".jpg"]:hover {
+  transform: rotate(2deg) scale(1.05); /* Rotate and scale up on hover */
+}
+
+.frame-container {
+  text-align: center; /* Center align the text */
+}
+
+.frame-container h1 {
+  font-size: 1.5em; /* Title font size */
+  margin-top: 20px;
+}
+
+.frame-container h2 {
+  font-size: 1.2em; /* Description font size */
+  margin-top: 10px;
+}
+
+.frame-container p {
+  font-size: 1em; /* Paragraph font size */
+  margin-top: 5px;
+}

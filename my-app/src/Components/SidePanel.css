@@ -1,0 +1,28 @@
+.side-panel {
+font-family: 'Patrick Hand', cursive;
+position: fixed;
+top: 0;
+right: -300px; /* Adjust the width as needed */
+width: 300px;
+height: 100%;
+background-color: white;
+box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+transition: right 0.3s ease;
+display: flex; 
+flex-direction: column;
+}
+
+.side-panel.open {
+right: 0;
+}
+
+.close-button {
+font-family: 'Patrick Hand', cursive;
+top: 10px;
+color: rgb(0, 0, 0);
+border: none;
+padding: 10px;
+cursor: pointer;
+align-self: flex-end;
+background-color: white;
+}

@@ -1,0 +1,21 @@
+
+.footer-container {
+padding-top: 5%;
+padding-bottom: 5%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 50px;
+align-items: center;
+justify-content: center;
+}
+
+.footer-author {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+width: 100%;
+}
+
+.footer-container p {
+text-align: left;
+font-family: 'Patrick Hand', cursive;
+}
