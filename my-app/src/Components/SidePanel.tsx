@@ -29,8 +29,9 @@ function SidePanel({ isOpen, item, onClose }) {
   return (
     <div className={`side-panel ${isOpen ? 'open' : ''}`}>
         <button className="close-button" onClick={onClose}>X</button>
+        <img src={item?.imageRef} alt={item?.title} />
         <h1>{item?.title}</h1>
-        <h2>{item?.description}</h2>
+        <p>{item?.description}</p>
         <p>Medio: {item?.material}</p>
         <p>Dimensiones: {item?.dimensions}</p>
         <p>Costo: {item?.cost.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} mxn</p>

@@ -3,19 +3,26 @@ import Frame from './Components/Frame.tsx';
 import SidePanel from './Components/SidePanel.tsx';
 import Footer from './Components/Footer.tsx';
 import './App.css';
-import OIPImage from './Images/OIP.jpg';
+import Caminando from './Images/Caminando_En_Templo_Mayor.JPG';
+import CaminandoRef from './Images/Caminando_En_Templo_Mayor_Ref.JPG';
+import Cocinando from './Images/Cocinando_En_Casa.JPG';
+import CocinandoRef from './Images/Cocinando_En_Casa_Ref.jpg';
+
+
 
 const item1 = {
-  image: OIPImage,
-  title: 'Art 1',
-  description: 'Description 1',
+  image: Caminando,
+  imageRef: CaminandoRef,
+  title: 'Caminando en Templo Mayor',
+  description: 'Un dia en camino a una reunion de dibujo urbano, me encontre en la zona del centro historico de la ciudad de mexico cerca del Templo Mayor, era la primera vez que caminaba por esa zona a pesar de ser un citadino que se jacta de conocer su ciudad, y a la lejania vi esta cupula que me llamo la atencion, me acerque y me encontre con esta vista, me parecio interesante y decidi dibujarla.',
   cost: 100,
   material: 'Canvas',
   dimensions: '10x10',
 };
 
 const item2 = {
-  image: OIPImage,
+  image: Cocinando,
+  imageRef: CocinandoRef,
   title: 'Art 2',
   description: 'Description 2',
   cost: 200,
@@ -24,7 +31,8 @@ const item2 = {
 };
 
 const item3 = {
-  image: OIPImage,
+  image: Caminando,
+  imageRef: CaminandoRef,
   title: 'Art 3',
   description: 'Description 3',
   cost: 300,

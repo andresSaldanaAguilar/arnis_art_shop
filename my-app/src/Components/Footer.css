@@ -15,6 +15,11 @@ grid-template-columns: repeat(2, 1fr);
 width: 100%;
 }
 
+.footer-container img {
+width: 30%;
+height: 30%;
+}
+
 .footer-container p {
 text-align: left;
 font-family: 'Patrick Hand', cursive;

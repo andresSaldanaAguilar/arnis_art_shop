@@ -3,6 +3,7 @@ import './Frame.css';
 
 interface FrameProps {
     image: string;
+    imageRef: string;
     title: string;
     description: string;
     cost: number;
@@ -12,12 +13,12 @@ interface FrameProps {
     setItem: (item: any) => void; // Add setItem prop
 }
 
-const Frame: React.FC<FrameProps> = ({ image, title, description, cost, material, dimensions, onClick, setItem }) => {
+const Frame: React.FC<FrameProps> = ({ image, imageRef, title, description, cost, material, dimensions, onClick, setItem }) => {
     return (
         <div className="frame-container" onClick={
             () => {
                 onClick();
-                setItem({ image, title, description, cost, material, dimensions });
+                setItem({ imageRef, title, description, cost, material, dimensions });
             }
         }> {}
             <img src={image} alt={description} />
