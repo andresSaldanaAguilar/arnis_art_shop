@@ -5,10 +5,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
-  text-align: center;
-}
-
 .header {
   font-family: 'Patrick Hand', cursive;
   font-size: 3em;
@@ -17,17 +13,11 @@ body {
   text-align: center;
 }
 
-.grid-container {
-  margin: 0px 0px 1000px 0px;
-}
-
 .body-container {
-  width: 100%;
   padding-top: 5%;
   padding-bottom: 5%;
   color: #928b83;
   background-color: #faebd7;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
+  max-width: fit-content;
 }

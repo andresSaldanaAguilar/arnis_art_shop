@@ -1,5 +1,5 @@
 import React from 'react';
-import OIPImage from '../Images/ME.jpg'; // Update the path to your image
+import OIPImage from '../Images/ME (Phone).jpg'; // Update the path to your image
 import './Footer.css';
 
 function Footer() {

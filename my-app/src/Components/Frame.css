@@ -1,6 +1,6 @@
-img[src$=".jpg"] {
+img {
   box-shadow: 5px 5px 15px #928b83; /* Casting shadow from bottom right to top left */
-  padding: 30px;
+  padding: 10px;
   background-color: white;
   border-radius: 5px;
   transform: rotate(-2deg); /* Slight rotation for artistic effect */
@@ -12,6 +12,20 @@ img[src$=".jpg"] {
 
 img[src$=".jpg"]:hover {
   transform: rotate(2deg) scale(1.05); /* Rotate and scale up on hover */
+}
+
+@media (max-width: 768px) {
+  img[src$=".jpg"] {
+    width: 80%; /* Adjust width for tablets and small screens */
+    max-width: 400px; /* Adjust max width for tablets and small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  img[src$=".jpg"] {
+    width: 100%; /* Adjust width for mobile devices */
+    max-width: 300px; /* Adjust max width for mobile devices */
+  }
 }
 
 .frame-container {

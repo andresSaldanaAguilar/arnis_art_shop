@@ -3,11 +3,12 @@ import Frame from './Components/Frame.tsx';
 import SidePanel from './Components/SidePanel.tsx';
 import Footer from './Components/Footer.tsx';
 import './App.css';
-import Caminando from './Images/Caminando_En_Templo_Mayor.JPG';
-import CaminandoRef from './Images/Caminando_En_Templo_Mayor_Ref.JPG';
-import Cocinando from './Images/Cocinando_En_Casa.JPG';
-import CocinandoRef from './Images/Cocinando_En_Casa_Ref.jpg';
-
+import Caminando from './Images/Caminando_En_Templo_Mayor (Phone).JPG';
+import CaminandoRef from './Images/Caminando_En_Templo_Mayor_Ref (Phone).JPG';
+import Cocinando from './Images/Cocinando_En_Casa (Phone).JPG';
+import CocinandoRef from './Images/Cocinando_En_Casa_Ref (Phone).jpg';
+import { Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const item1 = {
@@ -49,12 +50,22 @@ function App() {
       <div className="header-container">
         <h1 className="header">Arni's art</h1>
       </div>
-      <div className="body-container">
-        <Frame {...item1} onClick={() => setIsPanelOpen(true)} setItem={setItem}></Frame>
-        <Frame {...item2} onClick={() => setIsPanelOpen(true)} setItem={setItem}></Frame>
-        <Frame {...item3} onClick={() => setIsPanelOpen(true)} setItem={setItem}></Frame>
-        <Frame {...item1} onClick={() => setIsPanelOpen(true)} setItem={setItem}></Frame>
-      </div>
+      <Container className="body-container">
+        <Row>
+          <Col xs={12} md={4}>
+            <Frame {...item1} onClick={() => setIsPanelOpen(true)} setItem={setItem}></Frame>
+          </Col>
+          <Col xs={12} md={4}>
+            <Frame {...item2} onClick={() => setIsPanelOpen(true)} setItem={setItem}></Frame>
+          </Col>
+          <Col xs={12} md={4}>
+            <Frame {...item3} onClick={() => setIsPanelOpen(true)} setItem={setItem}></Frame>
+          </Col>
+          <Col xs={12} md={4}>
+            <Frame {...item1} onClick={() => setIsPanelOpen(true)} setItem={setItem}></Frame>
+          </Col>
+        </Row>
+      </Container>
       <Footer />
       <SidePanel isOpen={isPanelOpen} item={item} onClose={() => setIsPanelOpen(false)} />
     </div>
