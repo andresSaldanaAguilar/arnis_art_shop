@@ -1,20 +1,32 @@
-import React from 'react';
-import OIPImage from '../Images/ME (Phone).jpg'; // Update the path to your image
-import './Footer.css';
+import React from "react";
+import OIPImage from "../Images/ME.jpg"; // Update the path to your image
+import "./Footer.css";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
 
 function Footer() {
   return (
-    <div className="footer-container">
-      <div>
-        <div className="footer-author">
-          <div></div>
-          <p>Arni es un proyecto personal para poder capturar y compartir la vida desde la optica que tengo de la vida, al dia de hoy es solamente un hobby pero trato de dar un paso cada vez para volverme un artista 🎨 ❤️.</p>
-        </div>
-      </div>
-      <div>
-        <img src={OIPImage} alt="Arni's art" />
-      </div>
-    </div>
+    <Container className="footer-container">
+      <Col
+        xs={{ span: 6, offset: 3 }}
+        md={{ span: 6, offset: 3 }}
+        xl={{ span: 3, offset: 4 }}
+      >
+        <Row className="footer-image">
+          <Image src={OIPImage} />
+        </Row>
+        <Row className="footer-author">
+          <p>
+            Arni es mi alias artístico, capturando y compartiendo la vida a
+            través de mi lente única. Por ahora, es solo un pasatiempo, pero
+            estoy dando pasos para convertirme en un profesional. ¡Gracias por tu apoyo!
+            🎨❤️.
+          </p>
+        </Row>
+      </Col>
+    </Container>
   );
 }
 

@@ -8,38 +8,27 @@ height: 100%;
 background-color: white;
 box-shadow: -2px 0 5px rgba(0,0,0,0.5);
 transition: right 0.3s ease;
-display: flex; 
-flex-direction: column;
-align-items: center;
-padding: 5%;
+padding: 10%;
 }
 
 .side-panel img {
-    width: 60%;
-    height: 40%;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-
 .side-panel.open {
-right: 0;
-height: 100%; /* Set a fixed height */
-overflow-y: auto; /* Make it scrollable */
+    right: 0;
+    overflow-y: auto; /* Make it scrollable */
 }
 
 .close-button {
 font-family: 'Patrick Hand', cursive;
-top: 10px;
 color: rgb(0, 0, 0);
 border: none;
-padding: 10px;
 cursor: pointer;
-align-self: flex-end;
 background-color: white;
 }
 
 .side-panel p {
-    text-align: start;
     font-size: 0.8em;
 }
