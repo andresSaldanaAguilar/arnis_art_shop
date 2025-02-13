@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
+import Alert from "react-bootstrap/Alert";
 
 function SidePanel({ isOpen, item, onClose }) {
   useEffect(() => {
@@ -40,7 +41,7 @@ function SidePanel({ isOpen, item, onClose }) {
                 X
               </button>
             </Row>
-            
+
             <Row className="justify-content-md-center">
               <Image src={item?.imageRef} alt={item?.title} />
             </Row>
@@ -60,15 +61,23 @@ function SidePanel({ isOpen, item, onClose }) {
               })}{" "}
               mxn
             </p>
-
-            <a
-              href={` https://ig.me/m/_arni_art_`}
-              target="_arni_art_"
-              rel="noopener noreferrer"
-              className="instagram-message-button"
-            >
-              Enviame un mensaje a Instagram
-            </a>
+            <Alert variant={item?.disponible ? "success" : "secondary"}>
+              {item?.disponible ? (
+                <p>
+                  Esta obra está disponible{" "}
+                  <a
+                    href={` https://ig.me/m/_arni_art_`}
+                    target="_arni_art_"
+                    rel="noopener noreferrer"
+                    className="instagram-message-button"
+                  >
+                    Enviame un mensaje a Instagram para adquirirla
+                  </a>
+                </p>
+              ) : (
+                <p>Esta obra ya no está disponible</p>
+              )}
+            </Alert>
           </Col>
         </Row>
       </Container>

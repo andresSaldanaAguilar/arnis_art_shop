@@ -16,10 +16,11 @@ const item1 = {
   image: Caminando,
   imageRef: CaminandoRef,
   title: 'Caminando en Templo Mayor',
-  description: 'Un día en camino a una reunión de dibujo urbano, me encontré en la zona del centro histórico de la Ciudad de México cerca del Templo Mayor. Era la primera vez que caminaba por esa zona a pesar de ser un citadino que se jacta de conocer su ciudad, y a la lejanía vi esta cúpula que me llamó la atención. Me acerqué y me encontré con esta vista. Tenía tiempo sin pintar arquitectura entonces decidí volver a mis raíces.',
+  description: 'Un día en camino a una reunión de dibujo urbano, me encontré en la zona del centro histórico de la Ciudad de México cerca del Templo Mayor. Era la primera vez que caminaba por esa zona a pesar de ser un citadino que se jacta de conocer su ciudad, y a la lejanía vi esta cúpula que me llamó la atención. Me acerqué y me encontré con esta vista. Tenía tiempo sin pintar arquitectura, entonces decidí volver a mis raíces.',
   cost: 600,
-  material: 'Oleo en papel',
-  dimensions: '10x10',
+  material: 'Óleo en papel',
+  dimensions: '20x30cm',
+  disponible: true,
 };
 
 const item2 = {
@@ -28,8 +29,9 @@ const item2 = {
   title: 'Cocinando en Casa',
   description: 'Me encontré en mi casa cocinando para mí, y me pareció interesante el contraste entre el sartén y los colores vivos del tomate y el ajo, cosas tan simples pero que en conjunto crean una composición interesante y vibrante. La cocina, con sus aromas y sabores, se convirtió en un lienzo donde los ingredientes cotidianos se transformaron en arte.',
   cost: 400,
-  material: 'Oleo en papel',
-  dimensions: '8x12',
+  material: 'Óleo en papel',
+  dimensions: '18x22cm',
+  disponible: true,
 };
 
 const item3 = {
@@ -38,8 +40,9 @@ const item3 = {
   title: 'Mujer con Aretes',
   description: 'De vez en cuando entro a Pinterest para encontrar inspiración y me encontré con una foto de una mujer con aretes que me llamó la atención. Me llamó mucho la atención el contraste de sus aretes coloridos y exageradamente grandes, de manera inmediata visualicé la pintura en mi mente.',
   cost: 600,
-  material: 'Oleo en papel',
-  dimensions: '12x10',
+  material: 'Óleo en papel',
+  dimensions: '22x30',
+  disponible: true,
 };
 
 function App() {
