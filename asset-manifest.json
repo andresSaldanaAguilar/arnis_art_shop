@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/arnis_art_shop/static/css/main.36f4602a.css",
-    "main.js": "/arnis_art_shop/static/js/main.f23e40ad.js",
+    "main.css": "/arnis_art_shop/static/css/main.860c4626.css",
+    "main.js": "/arnis_art_shop/static/js/main.bbacf44d.js",
     "static/media/Cocinando_En_Casa_Ref.jpg": "/arnis_art_shop/static/media/Cocinando_En_Casa_Ref.4001ef13ac18f8e40f61.jpg",
     "static/media/Caminando_En_Templo_Mayor_Ref.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor_Ref.64e2ff2c447c6de72455.JPG",
-    "static/media/Caminando_En_Templo_Mayor.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor.d28c30a42fc961f38a5a.JPG",
+    "static/media/Caminando_En_Templo_Mayor.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor.5f3ced514624c1f7de00.JPG",
+    "static/media/Mujer_Con_Aretes.JPG": "/arnis_art_shop/static/media/Mujer_Con_Aretes.0349b9a3d31a96d28451.JPG",
+    "static/media/Cocinando_En_Casa.JPG": "/arnis_art_shop/static/media/Cocinando_En_Casa.24f0e2ef17342958cb5a.JPG",
     "static/media/ME.jpg": "/arnis_art_shop/static/media/ME.a0ff92e3176fdbebfd7a.jpg",
-    "static/media/Mujer_Con_Aretes.JPG": "/arnis_art_shop/static/media/Mujer_Con_Aretes.c79c10e7deb5a5907556.JPG",
-    "static/media/Cocinando_En_Casa.JPG": "/arnis_art_shop/static/media/Cocinando_En_Casa.58f86e6979af435d094f.JPG",
     "static/media/Mujer_Con_Aretes_Ref.jpg": "/arnis_art_shop/static/media/Mujer_Con_Aretes_Ref.7f256024d4950b19743c.jpg",
     "index.html": "/arnis_art_shop/index.html",
-    "main.36f4602a.css.map": "/arnis_art_shop/static/css/main.36f4602a.css.map",
-    "main.f23e40ad.js.map": "/arnis_art_shop/static/js/main.f23e40ad.js.map"
+    "main.860c4626.css.map": "/arnis_art_shop/static/css/main.860c4626.css.map",
+    "main.bbacf44d.js.map": "/arnis_art_shop/static/js/main.bbacf44d.js.map"
   },
   "entrypoints": [
-    "static/css/main.36f4602a.css",
-    "static/js/main.f23e40ad.js"
+    "static/css/main.860c4626.css",
+    "static/js/main.bbacf44d.js"
   ]
 }
