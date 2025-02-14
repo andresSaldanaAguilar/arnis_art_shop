@@ -29,5 +29,35 @@ img {
 .frame-container h3 {
   font-size: 1.5em; /* Title font size */
   margin-top: 20px;
-  font-family: 'Patrick Hand', cursive; /* Title font family */
+  font-family: 'Roboto', cursive; /* Title font family */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.attention-button {
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.attention-button:hover {
+  background-color: #ff4500; /* OrangeRed color */
 }

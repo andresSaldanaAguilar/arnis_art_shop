@@ -38,7 +38,7 @@ const Frame: React.FC<FrameProps> = ({ image, imageRef, title, description, cost
                 }> {}
                     <img src={image} alt={description} />
                     <h3>{title}</h3>
-                    { disponible? (<Badge bg="success">Disponible</Badge>) : (<></>)}
+                    { disponible? (<Badge bg="success" className='attention-button'>Disponible</Badge>) : (<></>)}
                 </div>
 
             </OverlayTrigger>
