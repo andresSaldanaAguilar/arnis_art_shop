@@ -18,12 +18,10 @@ function Footer() {
           <Image src={OIPImage} />
         </Row>
         <Row className="footer-author">
-          <p>
-            Arni es mi alias artístico, capturando y compartiendo la vida a
-            través de mi lente única. Por ahora, es solo un pasatiempo, pero
-            estoy dando pasos para convertirme en un profesional. ¡Gracias por tu apoyo!
-            🎨❤️.
-          </p>
+            <p>
+            Hola! Arni es mi alias artístico, capturando y compartiendo la vida a
+            través de mi óptica, una pintura a la vez 🎨❤️.
+            </p>
         </Row>
       </Col>
     </Container>

@@ -8,9 +8,9 @@ import CaminandoRef from './Images/Caminando_En_Templo_Mayor_Ref.JPG';
 import Cocinando from './Images/Cocinando_En_Casa.JPG';
 import CocinandoRef from './Images/Cocinando_En_Casa_Ref.jpg';
 import Mujer from './Images/Mujer_Con_Aretes.JPG';
+import MujerRef from './Images/Mujer_Con_Aretes_Ref.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 const item1 = {
   image: Caminando,
@@ -36,13 +36,14 @@ const item2 = {
 
 const item3 = {
   image: Mujer,
-  imageRef: CaminandoRef,
+  imageRef: MujerRef,
   title: 'Mujer con Aretes',
-  description: 'De vez en cuando entro a Pinterest para encontrar inspiración y me encontré con una foto de una mujer con aretes que me llamó la atención. Me llamó mucho la atención el contraste de sus aretes coloridos y exageradamente grandes, de manera inmediata visualicé la pintura en mi mente.',
+  description: 'De manera esporádica me encuentro en Pinterest para encontrar inspiración y me encontré con una foto de una mujer con aretes que me llamó la atención. Me llamó mucho la atención el contraste de sus aretes coloridos y exageradamente grandes, de manera inmediata visualicé la pintura en mi mente, los créditos y autoría de la fotografia no pertenecen, dejo el link.',
   cost: 600,
   material: 'Óleo en papel',
   dimensions: '22x30',
   disponible: true,
+  reference: 'https://pin.it/eUk4cQZwi',
 };
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <div className="header-container">
-        <h1 className="header">El Diario de Arni</h1>
+        <h3 className="header">🌻 El diario de Arni 🌻</h3>
       </div>
       <Container className="body-container" fluid>
         <Row>

@@ -7,20 +7,6 @@ img {
 
 }
 
-img[src$=".jpg"]:hover::after {
-  content: "More Information";
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 3px;
-  font-size: 0.9em;
-}
-
-
 @media (max-width: 768px) {
   img[src$=".jpg"] {
     width: 80%; /* Adjust width for tablets and small screens */

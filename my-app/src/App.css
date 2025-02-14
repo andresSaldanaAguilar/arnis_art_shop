@@ -5,12 +5,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.header {
+.header-container {
+  text-align: center;
   font-family: 'Patrick Hand', cursive;
+}
+
+.header {
   font-size: 3em;
   font-weight: bold;
   color: #333;
-  text-align: center;
+  padding: 1%;
+}
+
+.secret {
+  font-size: 0.7em;
 }
 
 .body-container {

@@ -38,7 +38,7 @@ function SidePanel({ isOpen, item, onClose }) {
           <Col xs={12} md={4} xl={4}>
             <Row>
               <button className="close-button" onClick={onClose}>
-                X
+              🔙
               </button>
             </Row>
 
@@ -47,7 +47,7 @@ function SidePanel({ isOpen, item, onClose }) {
             </Row>
             <h1>{item?.title}</h1>
 
-            <p>{item?.description}</p>
+            <p>{item?.description} {item?.reference ? <a href={item?.reference} rel="noopener noreferrer">referencia</a> : <></>}</p>
 
             <p>Medio: {item?.material}</p>
 
@@ -64,14 +64,14 @@ function SidePanel({ isOpen, item, onClose }) {
             <Alert variant={item?.disponible ? "success" : "secondary"}>
               {item?.disponible ? (
                 <p>
-                  Esta obra está disponible{" "}
+                  Esta obra está disponible ✨{" "}
                   <a
                     href={` https://ig.me/m/_arni_art_`}
                     target="_arni_art_"
                     rel="noopener noreferrer"
                     className="instagram-message-button"
                   >
-                    Enviame un mensaje a Instagram para adquirirla
+                    enviame un mensaje a Instagram para adquirirla
                   </a>
                 </p>
               ) : (
