@@ -1,8 +1,9 @@
 import React from "react";
 import "./Frame.css";
 import Badge from "react-bootstrap/Badge";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 interface FrameProps {
   image: string;
@@ -48,17 +49,32 @@ const Frame: React.FC<FrameProps> = ({
         });
       }}
     >
-      {" "}
-      {}
-      <img src={image} alt={description} />
-      <h3>{title}</h3>
-      {disponible ? (
-        <Badge bg=""  className="attention-button">
-          ¿Quieres saber más 👀? Haz click 
-        </Badge>
-      ) : (
-        <></>
-      )}
+      <Container>
+        <Row className="justify-content-center">
+          <Col xs={12} md={12} xl={12}>
+            <img src={image} alt={description} />
+            <h3>{title}</h3>
+            <Row >
+              <Col xs={6} md={6} xl={{span: 3, offset: 3}}>
+                {disponible ? (
+                <p>
+                  {cost.toLocaleString("es-MX", {
+                    style: "currency",
+                    currency: "MXN",
+                  })}{" "}
+                  mxn
+                </p>
+                ) : (
+                  <p>Vendido 📈</p>
+                )}
+              </Col>
+              <Col xs={6} md={6} xl={{span: 2, offset: 0}}>
+                  <Badge bg="" className="attention-button">más info 👀</Badge>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

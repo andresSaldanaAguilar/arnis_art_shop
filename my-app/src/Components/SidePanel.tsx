@@ -53,17 +53,20 @@ function SidePanel({ isOpen, item, onClose }) {
 
             <p>Dimensiones: {item?.dimensions}</p>
 
-            <p>
-              Costo:{" "}
-              {item?.cost.toLocaleString("es-MX", {
-                style: "currency",
-                currency: "MXN",
-              })}{" "}
-              mxn
-            </p>
+            { item?.disponible ?
+              (<p>
+                Costo:{" "}
+                {item?.cost.toLocaleString("es-MX", {
+                  style: "currency",
+                  currency: "MXN",
+                })}{" "}
+                mxn
+              </p>) : <></>
+          }
+            
             <Alert variant={item?.disponible ? "success" : "secondary"}>
-              {item?.disponible ? (
-                <p>
+                {item?.disponible ?
+                (<p>
                   Esta obra está disponible ✨{" "}
                   <a
                     href={` https://ig.me/m/_arni_art_`}
@@ -73,10 +76,18 @@ function SidePanel({ isOpen, item, onClose }) {
                   >
                     enviame un mensaje a Instagram para adquirirla
                   </a>
-                </p>
-              ) : (
-                <p>Esta obra ya no está disponible</p>
-              )}
+                </p>) :
+                (<p>
+                  Esta obra ya no está disponible 😿{" "}
+                  <a
+                    href={` https://ig.me/m/_arni_art_`}
+                    target="_arni_art_"
+                    rel="noopener noreferrer"
+                    className="instagram-message-button"
+                  >
+                    enviame un mensaje para hacer un pedido
+                  </a>
+                </p>)}
             </Alert>
           </Col>
         </Row>

@@ -48,16 +48,15 @@ img {
 }
 
 .attention-button {
-  background-color: #ff6347; /* Tomato color */
+  background-color: #928b83; /* Tomato color */
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 1.2em;
   cursor: pointer;
-  animation: pulse 2s infinite;
 }
 
 .attention-button:hover {
-  background-color: #ff4500; /* OrangeRed color */
+  background-color: #494137; /* OrangeRed color */
 }
