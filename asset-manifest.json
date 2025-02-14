@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/arnis_art_shop/static/css/main.36f4602a.css",
-    "main.js": "/arnis_art_shop/static/js/main.56a8b68b.js",
+    "main.js": "/arnis_art_shop/static/js/main.f95f4257.js",
     "static/media/Cocinando_En_Casa_Ref.jpg": "/arnis_art_shop/static/media/Cocinando_En_Casa_Ref.4001ef13ac18f8e40f61.jpg",
     "static/media/Caminando_En_Templo_Mayor_Ref.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor_Ref.64e2ff2c447c6de72455.JPG",
     "static/media/Caminando_En_Templo_Mayor.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor.d28c30a42fc961f38a5a.JPG",
@@ -11,10 +11,10 @@
     "static/media/Mujer_Con_Aretes_Ref.jpg": "/arnis_art_shop/static/media/Mujer_Con_Aretes_Ref.7f256024d4950b19743c.jpg",
     "index.html": "/arnis_art_shop/index.html",
     "main.36f4602a.css.map": "/arnis_art_shop/static/css/main.36f4602a.css.map",
-    "main.56a8b68b.js.map": "/arnis_art_shop/static/js/main.56a8b68b.js.map"
+    "main.f95f4257.js.map": "/arnis_art_shop/static/js/main.f95f4257.js.map"
   },
   "entrypoints": [
     "static/css/main.36f4602a.css",
-    "static/js/main.56a8b68b.js"
+    "static/js/main.f95f4257.js"
   ]
 }
