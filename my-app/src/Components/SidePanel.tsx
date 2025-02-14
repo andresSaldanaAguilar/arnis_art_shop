@@ -34,17 +34,15 @@ function SidePanel({ isOpen, item, onClose }) {
   return (
     <div className={`side-panel ${isOpen ? "open" : ""}`}>
       <Container>
-        <Row className="justify-content-md-center">
-          <Col xs={12} md={4} xl={4}>
+        <Row className="justify-content-center">
+          <Col xs={10} md={4} xl={4}>
             <Row>
               <button className="close-button" onClick={onClose}>
               🔙
               </button>
             </Row>
 
-            <Row className="justify-content-md-center">
-              <Image src={item?.imageRef} alt={item?.title} />
-            </Row>
+            <Image src={item?.imageRef} alt={item?.title} />
             <h1>{item?.title}</h1>
 
             <p>{item?.description} {item?.reference ? <a href={item?.reference} rel="noopener noreferrer">referencia</a> : <></>}</p>
