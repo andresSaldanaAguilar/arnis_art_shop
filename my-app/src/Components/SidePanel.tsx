@@ -42,7 +42,9 @@ function SidePanel({ isOpen, item, onClose }) {
               </button>
             </Row>
 
+            <Row>
             <Image src={item?.imageRef} alt={item?.title} />
+            </Row>
             <h1>{item?.title}</h1>
 
             <p>{item?.description} {item?.reference ? <a href={item?.reference} rel="noopener noreferrer">referencia</a> : <></>}</p>
