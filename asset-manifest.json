@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/arnis_art_shop/static/css/main.860c4626.css",
-    "main.js": "/arnis_art_shop/static/js/main.bbacf44d.js",
+    "main.css": "/arnis_art_shop/static/css/main.4aa67cb6.css",
+    "main.js": "/arnis_art_shop/static/js/main.5f994425.js",
+    "static/media/trees.JPG": "/arnis_art_shop/static/media/trees.b0d0d4c251199b67f161.JPG",
+    "static/media/Keane.jpg": "/arnis_art_shop/static/media/Keane.a499e90bd1218c0c337b.jpg",
     "static/media/Cocinando_En_Casa_Ref.jpg": "/arnis_art_shop/static/media/Cocinando_En_Casa_Ref.4001ef13ac18f8e40f61.jpg",
     "static/media/Caminando_En_Templo_Mayor_Ref.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor_Ref.64e2ff2c447c6de72455.JPG",
+    "static/media/trees_Ref.JPG": "/arnis_art_shop/static/media/trees_Ref.a8c11ce84dea957de047.JPG",
     "static/media/Caminando_En_Templo_Mayor.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor.5f3ced514624c1f7de00.JPG",
     "static/media/Mujer_Con_Aretes.JPG": "/arnis_art_shop/static/media/Mujer_Con_Aretes.0349b9a3d31a96d28451.JPG",
     "static/media/Cocinando_En_Casa.JPG": "/arnis_art_shop/static/media/Cocinando_En_Casa.24f0e2ef17342958cb5a.JPG",
     "static/media/ME.jpg": "/arnis_art_shop/static/media/ME.a0ff92e3176fdbebfd7a.jpg",
     "static/media/Mujer_Con_Aretes_Ref.jpg": "/arnis_art_shop/static/media/Mujer_Con_Aretes_Ref.7f256024d4950b19743c.jpg",
+    "static/media/Keane_Ref.jpg": "/arnis_art_shop/static/media/Keane_Ref.4ee710be47e6a9074205.jpg",
     "index.html": "/arnis_art_shop/index.html",
-    "main.860c4626.css.map": "/arnis_art_shop/static/css/main.860c4626.css.map",
-    "main.bbacf44d.js.map": "/arnis_art_shop/static/js/main.bbacf44d.js.map"
+    "main.4aa67cb6.css.map": "/arnis_art_shop/static/css/main.4aa67cb6.css.map",
+    "main.5f994425.js.map": "/arnis_art_shop/static/js/main.5f994425.js.map"
   },
   "entrypoints": [
-    "static/css/main.860c4626.css",
-    "static/js/main.bbacf44d.js"
+    "static/css/main.4aa67cb6.css",
+    "static/js/main.5f994425.js"
   ]
 }
