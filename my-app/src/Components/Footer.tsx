@@ -9,21 +9,17 @@ import Row from "react-bootstrap/Row";
 function Footer() {
   return (
     <Container className="footer-container">
-      <Col
-        xs={{ span: 6, offset: 3 }}
-        md={{ span: 6, offset: 3 }}
-        xl={{ span: 3, offset: 4 }}
-      >
-        <Row className="footer-image">
-          <Image src={OIPImage} />
-        </Row>
-        <Row className="footer-author">
-            <p>
-            Hola! Arni es mi alias artístico, capturando y compartiendo la vida a
-            través de mi óptica, una pintura a la vez 🎨❤️.
-            </p>
-        </Row>
-      </Col>
+      <Row className="footer-image justify-content-center">
+        <Col xs={12} md={4} className="text-center">
+          <Image src={OIPImage} style={{ width: "40%" }} />
+        </Col>
+        <Col xs={12} md={8} className="footer-text">
+          <p>
+            Hola! Arni es mi alias artístico, capturando y compartiendo la vida
+            a través de mi óptica, una pintura a la vez 🎨❤️.
+          </p>
+        </Col>
+      </Row>
     </Container>
   );
 }

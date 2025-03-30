@@ -1,62 +1,47 @@
-img {
-  box-shadow: 5px 5px 15px #928b83; /* Casting shadow from bottom right to top left */
-  padding: 10px;
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.description-card {
   background-color: white;
-  border-radius: 5px;
-  width: 60%; /* Make the image take full width of its container */
-
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 100%; /* Ensure the column takes full height */
 }
 
-@media (max-width: 768px) {
-  img[src$=".jpg"] {
-    width: 80%; /* Adjust width for tablets and small screens */
-    max-width: 400px; /* Adjust max width for tablets and small screens */
-  }
+.description-card h3 {
+  font-size: 0.8em; /* Reduced font size */
+  font-family: 'Roboto', cursive;
 }
 
-@media (max-width: 480px) {
-  img[src$=".jpg"] {
-    width: 100%; /* Adjust width for mobile devices */
-    max-width: 300px; /* Adjust max width for mobile devices */
-  }
+.description-card p {
+  font-size: 0.4em; /* Reduced font size */
+  margin-bottom: 8px; /* Adjusted margin */
 }
 
 .frame-container {
-  text-align: center; /* Center align the text */
-  margin-bottom: 10%;
+  margin-bottom: 20px;
 }
 
-.frame-container h3 {
-  font-size: 1.5em; /* Title font size */
-  margin-top: 20px;
-  font-family: 'Roboto', cursive; /* Title font family */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+@media (max-width: 576px) {
+  .image-container img {
+    width: 80%;
   }
-  70% {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  .description-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
-.attention-button {
-  background-color: #928b83; /* Tomato color */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
-}
 
-.attention-button:hover {
-  background-color: #494137; /* OrangeRed color */
-}

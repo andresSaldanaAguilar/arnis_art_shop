@@ -51,27 +51,27 @@ const Frame: React.FC<FrameProps> = ({
     >
       <Container>
         <Row className="justify-content-center">
-          <Col xs={12} md={12} xl={12}>
+          <Col xs={12} md={8} className="image-container">
             <img src={image} alt={description} />
+          </Col>
+          <Col xs={8} md={4} className="description-card ">
+            <div className="description-card-content">
             <h3>{title}</h3>
-            <Row >
-              <Col xs={6} md={6} xl={{span: 3, offset: 3}}>
-                {disponible ? (
-                <p>
+            <p>{description}</p>
+            <p>
+              {disponible ? (
+                <>
                   {cost.toLocaleString("es-MX", {
                     style: "currency",
                     currency: "MXN",
                   })}{" "}
                   mxn
-                </p>
-                ) : (
-                  <p>Vendido 📈</p>
-                )}
-              </Col>
-              <Col xs={6} md={6} xl={{span: 2, offset: 0}}>
-                  <Badge bg="" className="attention-button">más info 👀</Badge>
-              </Col>
-            </Row>
+                </>
+              ) : (
+                "Vendido 📈"
+              )}
+            </p>
+            </div>
           </Col>
         </Row>
       </Container>
