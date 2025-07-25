@@ -1,9 +1,9 @@
 import React from "react";
 import "./Frame.css";
-import Badge from "react-bootstrap/Badge";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import FrameDescription from "./FrameDescription.tsx";
 
 interface FrameProps {
   image: string;
@@ -34,7 +34,6 @@ const Frame: React.FC<FrameProps> = ({
 }) => {
   return (
     <div
-      className="frame-container"
       onClick={() => {
         onClick();
         setItem({
@@ -50,30 +49,15 @@ const Frame: React.FC<FrameProps> = ({
       }}
     >
       <Container>
-        <Row className="justify-content-center">
-          <Col xs={12} md={8} className="image-container">
-            <img src={image} alt={description} />
-          </Col>
-          <Col xs={8} md={4} className="description-card ">
-            <div className="description-card-content">
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <p>
-              {disponible ? (
-                <>
-                  {cost.toLocaleString("es-MX", {
-                    style: "currency",
-                    currency: "MXN",
-                  })}{" "}
-                  mxn
-                </>
-              ) : (
-                "Vendido 📈"
-              )}
-            </p>
-            </div>
-          </Col>
-        </Row>
+        <Col xs={12} md={8} className="image-container">
+          <img src={image} alt={description} />
+        </Col>
+        <FrameDescription
+          title={title}
+          description={description}
+          cost={cost}
+          disponible={disponible}
+        />
       </Container>
     </div>
   );

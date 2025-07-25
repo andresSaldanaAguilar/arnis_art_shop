@@ -1,0 +1,23 @@
+.description-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 100%; /* Ensure the column takes full height */
+}
+
+.description-card h3 {
+  font-size: 0.5em; /* Reduced font size */
+  font-family: "Roboto", cursive;
+}
+
+.description-card p {
+  font-size: 0.4em; /* Reduced font size */
+}
+
+@media (max-width: 576px) {
+  .description-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
