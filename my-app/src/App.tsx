@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Frame from "./Components/Frame.tsx";
+import FrameDescription from "./Components/FrameDescription.tsx";
 import SidePanel from "./Components/SidePanel.tsx";
 import Footer from "./Components/Footer.tsx";
 import "./App.css";
@@ -89,41 +90,102 @@ function App() {
         </div>
         <Container className="body-container" fluid>
           <div>
+            {/* First row with 2 frames */}
             <Row className="align-items-center">
-              <Col xs={4} md={4}>
+              <Col xs={6} md={6}>
                 <Frame
                   {...item5}
                   onClick={() => setIsPanelOpen(true)}
                   setItem={setItem}
                 ></Frame>
               </Col>
-              <Col xs={4} md={4}>
+              <Col xs={6} md={6}>
                 <Frame
                   {...item4}
                   onClick={() => setIsPanelOpen(true)}
                   setItem={setItem}
                 ></Frame>
               </Col>
-              <Col xs={4} md={4}>
+            </Row>
+
+            {/* Descriptions for first row */}
+            <Row className="align-items-center">
+              <Col xs={6} md={6}>
+                <FrameDescription
+                  title={item5.title}
+                  description={item5.description}
+                  cost={item5.cost}
+                  disponible={item5.disponible}
+                />
+              </Col>
+              <Col xs={6} md={6}>
+                <FrameDescription
+                  title={item4.title}
+                  description={item4.description}
+                  cost={item4.cost}
+                  disponible={item4.disponible}
+                />
+              </Col>
+            </Row>
+
+            {/* Second row with 2 frames */}
+            <Row className="align-items-center">
+              <Col xs={6} md={6}>
                 <Frame
                   {...item1}
                   onClick={() => setIsPanelOpen(true)}
                   setItem={setItem}
                 ></Frame>
               </Col>
-              <Col xs={4} md={4}>
+              <Col xs={6} md={6}>
                 <Frame
                   {...item2}
                   onClick={() => setIsPanelOpen(true)}
                   setItem={setItem}
                 ></Frame>
               </Col>
-              <Col xs={4} md={4}>
+            </Row>
+
+            {/* Descriptions for second row */}
+            <Row className="align-items-center">
+              <Col xs={6} md={6}>
+                <FrameDescription
+                  title={item1.title}
+                  description={item1.description}
+                  cost={item1.cost}
+                  disponible={item1.disponible}
+                />
+              </Col>
+              <Col xs={6} md={6}>
+                <FrameDescription
+                  title={item2.title}
+                  description={item2.description}
+                  cost={item2.cost}
+                  disponible={item2.disponible}
+                />
+              </Col>
+            </Row>
+
+            {/* Third row with 1 frame (centered) */}
+            <Row className="align-items-center">
+              <Col xs={6} md={6} className="mx-auto">
                 <Frame
                   {...item3}
                   onClick={() => setIsPanelOpen(true)}
                   setItem={setItem}
                 ></Frame>
+              </Col>
+            </Row>
+
+            {/* Description for third row */}
+            <Row className="align-items-center">
+              <Col xs={6} md={6} className="mx-auto">
+                <FrameDescription
+                  title={item3.title}
+                  description={item3.description}
+                  cost={item3.cost}
+                  disponible={item3.disponible}
+                />
               </Col>
             </Row>
           </div>

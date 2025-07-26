@@ -1,8 +1,7 @@
 .footer-container {
-  padding-top: 2%;
-  padding-bottom: 2%;
   color: #928b83;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-image img {
@@ -11,6 +10,5 @@
 
 .footer-text {
   font-family: "Roboto", cursive;
-  text-align: left;
-  width: 30%;
+  font-size: 0.5em;
 }

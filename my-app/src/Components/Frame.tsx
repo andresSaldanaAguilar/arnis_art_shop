@@ -2,8 +2,6 @@ import React from "react";
 import "./Frame.css";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import FrameDescription from "./FrameDescription.tsx";
 
 interface FrameProps {
   image: string;
@@ -52,12 +50,6 @@ const Frame: React.FC<FrameProps> = ({
         <Col xs={12} md={8} className="image-container">
           <img src={image} alt={description} />
         </Col>
-        <FrameDescription
-          title={title}
-          description={description}
-          cost={cost}
-          disponible={disponible}
-        />
       </Container>
     </div>
   );

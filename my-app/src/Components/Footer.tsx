@@ -10,7 +10,7 @@ function Footer() {
   return (
     <Container className="footer-container">
       <Row className="footer-image justify-content-center">
-        <Col xs={12} md={4} className="text-center">
+        <Col xs={6} md={4} className="text-center">
           <Image src={OIPImage} style={{ width: "40%" }} />
         </Col>
         <Col xs={12} md={8} className="footer-text">
