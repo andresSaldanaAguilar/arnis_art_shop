@@ -91,40 +91,33 @@ function App() {
         <div className="header-container">
           <h2 className="header">🌻 El diario de Arni 🌻</h2>
         </div>
-        <Container className="body-container" fluid>
-          <div>
-            <Row className="align-items-center">
-              {items.map((currentItem, index) => (
-                <Col
-                  key={currentItem.title}
-                  xs={6}
-                  md={6}
-                  className={index === items.length - 1 ? "mx-auto" : ""}
-                >
-                  <Frame
-                    {...currentItem}
-                    onClick={() => setIsPanelOpen(true)}
-                    setItem={setItem}
-                  ></Frame>
-                  <FrameDescription
-                    title={currentItem.title}
-                    description={currentItem.description}
-                    cost={currentItem.cost}
-                    disponible={currentItem.disponible}
-                  />
-                </Col>
-              ))}
-            </Row>
-          </div>
+        <Container>
+          <Row>
+            {items.map((currentItem, index) => (
+              <Col
+                key={currentItem.title}
+                xs={6}
+                md={6}
+                className={index === items.length - 1 ? "mx-auto" : ""}
+              >
+                <Frame
+                  {...currentItem}
+                  onClick={() => setIsPanelOpen(true)}
+                  setItem={setItem}
+                ></Frame>
+                <FrameDescription
+                  title={currentItem.title}
+                  description={currentItem.description}
+                  cost={currentItem.cost}
+                  disponible={currentItem.disponible}
+                />
+              </Col>
+            ))}
+          </Row>
         </Container>
         <hr className="separator" />
         <Footer />
       </div>
-      <SidePanel
-        isOpen={isPanelOpen}
-        item={item}
-        onClose={() => setIsPanelOpen(false)}
-      />
     </div>
   );
 }

@@ -16,24 +16,22 @@ const FrameDescription: React.FC<FrameDescriptionProps> = ({
   disponible,
 }) => {
   return (
-    <Col xs={12} md={4} className="description-card">
-      <div className="description-card-content">
-        <h3>{title}</h3>
-        <p>
-          {disponible ? (
-            <>
-              {cost.toLocaleString("es-MX", {
-                style: "currency",
-                currency: "MXN",
-              })}{" "}
-              mxn
-            </>
-          ) : (
-            "No dispoble 🚫"
-          )}
-        </p>
-      </div>
-    </Col>
+    <div className="description-card">
+      <h3>{title}</h3>
+      <p>
+        {disponible ? (
+          <>
+            {cost.toLocaleString("es-MX", {
+              style: "currency",
+              currency: "MXN",
+            })}{" "}
+            mxn
+          </>
+        ) : (
+          "No disponible 🚫"
+        )}
+      </p>
+    </div>
   );
 };
 

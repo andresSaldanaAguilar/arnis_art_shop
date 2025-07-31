@@ -1,9 +1,6 @@
 .description-card {
   background-color: white;
-  border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  height: 100%; /* Ensure the column takes full height */
 }
 
 .description-card h3 {
@@ -13,11 +10,4 @@
 
 .description-card p {
   font-size: 0.7em; /* Reduced font size */
-}
-
-@media (max-width: 576px) {
-  .description-card {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 }

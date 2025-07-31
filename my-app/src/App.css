@@ -1,21 +1,6 @@
-.body-container {
-  padding-bottom: 2%;
-  color: #928b83;
-}
-
-.header-and-body {
-  position: relative;
-  background-color: white;
-  z-index: 1;
-}
-
 .header-container {
   text-align: center; /* Center the h2 text */
   padding: 2%;
-}
-
-.header {
-  color: #928b83;
 }
 
 .separator {
