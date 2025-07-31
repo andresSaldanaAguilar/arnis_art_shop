@@ -1,20 +1,14 @@
 import React from "react";
-import Col from "react-bootstrap/Col";
 import "./FrameDescription.css";
+import { ItemProps } from "../interfaces/ItemProps";
 
 interface FrameDescriptionProps {
-  title: string;
-  description: string;
-  cost: number;
-  disponible: boolean;
+  item: ItemProps;
 }
 
-const FrameDescription: React.FC<FrameDescriptionProps> = ({
-  title,
-  description,
-  cost,
-  disponible,
-}) => {
+const FrameDescription: React.FC<FrameDescriptionProps> = ({ item }) => {
+  const { title, cost, disponible } = item;
+
   return (
     <div className="description-card">
       <h3>{title}</h3>

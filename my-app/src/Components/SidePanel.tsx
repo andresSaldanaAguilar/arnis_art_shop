@@ -5,19 +5,28 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Alert from "react-bootstrap/Alert";
+import { ItemProps } from "../interfaces/ItemProps";
 
-function SidePanel({ isOpen, item, onClose }) {
-  const panelRef = useRef(null);
+interface SidePanelProps {
+  isOpen: boolean;
+  item: ItemProps | undefined;
+  onClose: () => void;
+}
 
+function SidePanel({ isOpen, item, onClose }: SidePanelProps) {
+  const panelRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    function handleKeyDown(event) {
+    function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
         onClose();
       }
     }
 
-    function handleClickOutside(event) {
-      if (event.target.classList.contains("side-panel")) {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        event.target instanceof Element &&
+        event.target.classList.contains("side-panel")
+      ) {
         onClose();
       }
     }
@@ -44,10 +53,7 @@ function SidePanel({ isOpen, item, onClose }) {
   }, [isOpen, onClose]);
 
   return (
-    <div
-      ref={panelRef}
-      className={`side-panel ${isOpen ? "open" : ""}`}
-    >
+    <div ref={panelRef} className={`side-panel ${isOpen ? "open" : ""}`}>
       <Container>
         <Row className="justify-content-center">
           <Col xs={10} md={4} xl={4}>

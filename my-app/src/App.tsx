@@ -80,7 +80,7 @@ const item5 = {
 
 function App() {
   const [isPanelOpen, setIsPanelOpen] = useState(false);
-  const [item, setItem] = useState(undefined);
+  const [item, setItem] = useState<any>(undefined);
 
   // Create an array of all items for iterative rendering
   const items = [item5, item4, item1, item2, item3];
@@ -105,19 +105,19 @@ function App() {
                   onClick={() => setIsPanelOpen(true)}
                   setItem={setItem}
                 ></Frame>
-                <FrameDescription
-                  title={currentItem.title}
-                  description={currentItem.description}
-                  cost={currentItem.cost}
-                  disponible={currentItem.disponible}
-                />
+                <FrameDescription item={currentItem} />
               </Col>
             ))}
           </Row>
         </Container>
         <hr className="separator" />
-        <Footer />
+        <Footer />{" "}
       </div>
+      <SidePanel
+        isOpen={isPanelOpen}
+        item={item}
+        onClose={() => setIsPanelOpen(false)}
+      />
     </div>
   );
 }
