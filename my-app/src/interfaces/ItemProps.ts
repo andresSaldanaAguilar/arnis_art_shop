@@ -8,4 +8,5 @@ export interface ItemProps {
   dimensions: string;
   disponible: boolean;
   reference?: string;
+  category: string;
 }
