@@ -48,7 +48,7 @@ const Frame: React.FC<FrameProps> = ({
     >
       <Container>
         <Col xs={12} md={8} className="image-container">
-          <img src={image} alt={description} />
+          <img src={image} alt={description} className="standard-image" />
         </Col>
       </Container>
     </div>

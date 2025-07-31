@@ -7,12 +7,12 @@
 }
 
 .description-card h3 {
-  font-size: 0.5em; /* Reduced font size */
+  font-size: 0.9em; /* Reduced font size */
   font-family: "Roboto", cursive;
 }
 
 .description-card p {
-  font-size: 0.4em; /* Reduced font size */
+  font-size: 0.7em; /* Reduced font size */
 }
 
 @media (max-width: 576px) {
