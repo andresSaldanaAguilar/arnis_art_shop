@@ -1,24 +1,19 @@
 {
   "files": {
-    "main.css": "/arnis_art_shop/static/css/main.ce46fd07.css",
-    "main.js": "/arnis_art_shop/static/js/main.55eabe89.js",
+    "main.css": "/arnis_art_shop/static/css/main.689cb8bc.css",
+    "main.js": "/arnis_art_shop/static/js/main.b3ff463c.js",
+    "static/media/title.png": "/arnis_art_shop/static/media/title.ed031fe480c7aced081f.png",
     "static/media/trees.JPG": "/arnis_art_shop/static/media/trees.b0d0d4c251199b67f161.JPG",
     "static/media/Keane.jpg": "/arnis_art_shop/static/media/Keane.a499e90bd1218c0c337b.jpg",
-    "static/media/Cocinando_En_Casa_Ref.jpg": "/arnis_art_shop/static/media/Cocinando_En_Casa_Ref.4001ef13ac18f8e40f61.jpg",
-    "static/media/Caminando_En_Templo_Mayor_Ref.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor_Ref.64e2ff2c447c6de72455.JPG",
-    "static/media/trees_Ref.JPG": "/arnis_art_shop/static/media/trees_Ref.a8c11ce84dea957de047.JPG",
     "static/media/Caminando_En_Templo_Mayor.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor.5f3ced514624c1f7de00.JPG",
     "static/media/Mujer_Con_Aretes.JPG": "/arnis_art_shop/static/media/Mujer_Con_Aretes.0349b9a3d31a96d28451.JPG",
     "static/media/Cocinando_En_Casa.JPG": "/arnis_art_shop/static/media/Cocinando_En_Casa.24f0e2ef17342958cb5a.JPG",
-    "static/media/ME.jpg": "/arnis_art_shop/static/media/ME.a0ff92e3176fdbebfd7a.jpg",
-    "static/media/Mujer_Con_Aretes_Ref.jpg": "/arnis_art_shop/static/media/Mujer_Con_Aretes_Ref.7f256024d4950b19743c.jpg",
-    "static/media/Keane_Ref.jpg": "/arnis_art_shop/static/media/Keane_Ref.4ee710be47e6a9074205.jpg",
     "index.html": "/arnis_art_shop/index.html",
-    "main.ce46fd07.css.map": "/arnis_art_shop/static/css/main.ce46fd07.css.map",
-    "main.55eabe89.js.map": "/arnis_art_shop/static/js/main.55eabe89.js.map"
+    "main.689cb8bc.css.map": "/arnis_art_shop/static/css/main.689cb8bc.css.map",
+    "main.b3ff463c.js.map": "/arnis_art_shop/static/js/main.b3ff463c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce46fd07.css",
-    "static/js/main.55eabe89.js"
+    "static/css/main.689cb8bc.css",
+    "static/js/main.b3ff463c.js"
   ]
 }
