@@ -1,6 +1,6 @@
 export interface ItemProps {
   image: string;
-  imageRef: string;
+  imageRef?: string; // made optional
   title: string;
   description: string;
   cost: number;
@@ -9,4 +9,5 @@ export interface ItemProps {
   disponible: boolean;
   reference?: string;
   category: string;
+  purchaseLink?: string; // optional future link
 }
