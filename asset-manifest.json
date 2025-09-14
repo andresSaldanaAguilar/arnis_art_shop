@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/arnis_art_shop/static/css/main.689cb8bc.css",
-    "main.js": "/arnis_art_shop/static/js/main.b3ff463c.js",
+    "main.css": "/arnis_art_shop/static/css/main.0eed9f55.css",
+    "main.js": "/arnis_art_shop/static/js/main.6f86392a.js",
+    "static/media/tacuba.jpeg": "/arnis_art_shop/static/media/tacuba.a29d6940d0a797bb4745.jpeg",
+    "static/media/tlaloc.jpeg": "/arnis_art_shop/static/media/tlaloc.79a85995cca2d6effbf6.jpeg",
+    "static/media/centro.jpeg": "/arnis_art_shop/static/media/centro.110a1a66e18b08b6b4b5.jpeg",
+    "static/media/coyotes.jpeg": "/arnis_art_shop/static/media/coyotes.1c93ea6f8e364445201e.jpeg",
+    "static/media/diablito.jpeg": "/arnis_art_shop/static/media/diablito.9f470f821a2e7a2736f7.jpeg",
+    "static/media/ballena.jpeg": "/arnis_art_shop/static/media/ballena.f9beeec04dc7ce84bd29.jpeg",
+    "static/media/urraca.jpeg": "/arnis_art_shop/static/media/urraca.b98ff77b1424319c2658.jpeg",
+    "static/media/stickers.jpeg": "/arnis_art_shop/static/media/stickers.3fd54a742b4bca689371.jpeg",
     "static/media/title.png": "/arnis_art_shop/static/media/title.ed031fe480c7aced081f.png",
-    "static/media/trees.JPG": "/arnis_art_shop/static/media/trees.b0d0d4c251199b67f161.JPG",
-    "static/media/Keane.jpg": "/arnis_art_shop/static/media/Keane.a499e90bd1218c0c337b.jpg",
-    "static/media/Caminando_En_Templo_Mayor.JPG": "/arnis_art_shop/static/media/Caminando_En_Templo_Mayor.5f3ced514624c1f7de00.JPG",
-    "static/media/Mujer_Con_Aretes.JPG": "/arnis_art_shop/static/media/Mujer_Con_Aretes.0349b9a3d31a96d28451.JPG",
-    "static/media/Cocinando_En_Casa.JPG": "/arnis_art_shop/static/media/Cocinando_En_Casa.24f0e2ef17342958cb5a.JPG",
     "index.html": "/arnis_art_shop/index.html",
-    "main.689cb8bc.css.map": "/arnis_art_shop/static/css/main.689cb8bc.css.map",
-    "main.b3ff463c.js.map": "/arnis_art_shop/static/js/main.b3ff463c.js.map"
+    "main.0eed9f55.css.map": "/arnis_art_shop/static/css/main.0eed9f55.css.map",
+    "main.6f86392a.js.map": "/arnis_art_shop/static/js/main.6f86392a.js.map"
   },
   "entrypoints": [
-    "static/css/main.689cb8bc.css",
-    "static/js/main.b3ff463c.js"
+    "static/css/main.0eed9f55.css",
+    "static/js/main.6f86392a.js"
   ]
 }
