@@ -3,7 +3,7 @@ import { Row, Col, Form, Button, Collapse } from "react-bootstrap";
 
 export interface FiltersState {
   category: string;
-  maxCost: string;
+  maxCost: string; // now acts as a range key: 'all' | 'lt500' | '500-1000' | 'gt1000'
   disponible: string; // 'all' | 'true' | 'false'
   search: string;
 }
@@ -35,12 +35,12 @@ const Filters: React.FC<FiltersProps> = ({
   };
 
   useEffect(() => {
-    // ensure max cost default sync
+    // no longer auto-setting numeric max; ensure default is 'all'
     if (!current.maxCost) {
-      update({ maxCost: String(maxExistingCost) });
+      update({ maxCost: "all" });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [maxExistingCost]);
+  }, []);
 
   return (
     <div className="filters mb-3">
@@ -93,15 +93,17 @@ const Filters: React.FC<FiltersProps> = ({
             <Col xs={6} md={3}>
               <Form.Group controlId="filterCost">
                 <Form.Label className="small text-uppercase text-secondary">
-                  Costo Máx.
+                  Costo
                 </Form.Label>
-                <Form.Control
-                  type="number"
-                  min={0}
-                  max={maxExistingCost}
+                <Form.Select
                   value={current.maxCost}
                   onChange={(e) => update({ maxCost: e.target.value })}
-                />
+                >
+                  <option value="all">Todos</option>
+                  <option value="lt500">Menos de $500</option>
+                  <option value="500-1000">$500 - $1000</option>
+                  <option value="gt1000">Más de $1000</option>
+                </Form.Select>
               </Form.Group>
             </Col>
             <Col xs={6} md={3}>
@@ -139,7 +141,7 @@ const Filters: React.FC<FiltersProps> = ({
               onClick={() =>
                 onChange({
                   category: "Todas",
-                  maxCost: String(maxExistingCost),
+                  maxCost: "all",
                   disponible: "all",
                   search: "",
                 })

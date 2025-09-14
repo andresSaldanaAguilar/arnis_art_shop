@@ -105,6 +105,103 @@ button.btn-dark:hover {
   overflow: hidden;
 }
 
+/* Promo banners */
+.promo-banners {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.promo-banner {
+  position: relative;
+  padding: 0.85rem 1.1rem 0.85rem 2.75rem;
+  background: linear-gradient(135deg, var(--accent-soft), #fff);
+  border: 1px solid #f0e2d9;
+  border-radius: 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #5a3c2d;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.06),
+    0 4px 14px -6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.promo-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 85% 15%,
+    rgba(255, 255, 255, 0.6),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+.promo-banner .icon {
+  position: absolute;
+  left: 0.9rem;
+  font-size: 1.25rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+}
+.promo-banner:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 18px -4px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: 0.35s cubic-bezier(0.4, 0.8, 0.4, 1);
+}
+.promo-banner.with-image {
+  display: grid;
+  grid-template-columns: 136px 1fr;
+  gap: 0.9rem;
+  align-items: center;
+  padding-left: 1rem;
+}
+.promo-banner .promo-thumb {
+  width: 136px;
+  height: 136px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border: 2px solid #fff;
+}
+.promo-banner.with-image .content {
+  position: relative;
+  padding-left: 1.8rem;
+}
+.promo-banner.with-image .content .icon {
+  left: 0;
+}
+.promo-banner.link-banner {
+  cursor: pointer;
+  text-decoration: none;
+  color: #5a3c2d;
+  transition: background 0.35s, border-color 0.35s, transform 0.35s;
+}
+.promo-banner.link-banner:hover,
+.promo-banner.link-banner:focus {
+  background: linear-gradient(135deg, #ffe9da, #fff);
+  border-color: var(--accent);
+  outline: none;
+}
+.promo-banner.link-banner:active {
+  transform: translateY(1px);
+}
+@media (max-width: 480px) {
+  .promo-banner.with-image {
+    grid-template-columns: 112px 1fr;
+  }
+  .promo-banner .promo-thumb {
+    width: 112px;
+    height: 112px;
+  }
+}
+@media (min-width: 768px) {
+  .promo-banners {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
 /* Responsive tweaks */
 @media (max-width: 576px) {
   .filters h6 {

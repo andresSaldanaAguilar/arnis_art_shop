@@ -9,6 +9,7 @@ import Filters, { FiltersState } from "./Components/Filters.tsx"; // explicit ex
 import ItemTile from "./Components/ItemTile.tsx"; // explicit extension
 import ItemDetailModal from "./Components/ItemDetailModal.tsx"; // explicit extension
 import { ItemProps } from "./interfaces/ItemProps";
+import PromoBanners from "./Components/PromoBanners.tsx"; // explicit extension
 
 function App() {
   const maxCost = useMemo(
@@ -17,7 +18,7 @@ function App() {
   );
   const [filters, setFilters] = useState<FiltersState>({
     category: "Todas",
-    maxCost: String(maxCost),
+    maxCost: "all",
     disponible: "all",
     search: "",
   });
@@ -27,7 +28,14 @@ function App() {
     return items.filter((it) => {
       if (filters.category !== "Todas" && it.category !== filters.category)
         return false;
-      if (filters.maxCost && it.cost > Number(filters.maxCost)) return false;
+      // interpret cost range
+      if (filters.maxCost !== "all") {
+        const c = it.cost;
+        if (filters.maxCost === "lt500" && !(c < 500)) return false;
+        if (filters.maxCost === "500-1000" && !(c >= 500 && c <= 1000))
+          return false;
+        if (filters.maxCost === "gt1000" && !(c > 1000)) return false;
+      }
       if (filters.disponible !== "all") {
         const want = filters.disponible === "true";
         if (it.disponible !== want) return false;
@@ -45,6 +53,8 @@ function App() {
       <Header />
       <main className="flex-grow-1 py-4">
         <Container>
+          {/* Promo Banners */}
+          <PromoBanners />
           <Filters
             onChange={setFilters}
             current={filters}

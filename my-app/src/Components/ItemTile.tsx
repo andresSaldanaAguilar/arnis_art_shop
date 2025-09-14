@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Badge } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { ItemProps } from "../interfaces/ItemProps";
 
 interface ItemTileProps {
@@ -25,13 +25,11 @@ const ItemTile: React.FC<ItemTileProps> = ({ item, onSelect }) => {
         <Card.Title className="fs-6 mb-1 text-truncate" title={item.title}>
           {item.title}
         </Card.Title>
+        <Card.Text className="text-muted small mb-2">
+          {item.dimensions} | {item.material}
+        </Card.Text>
         <div className="d-flex justify-content-between align-items-center mt-auto">
-          <span className="fw-semibold">${item.cost}</span>
-          {!item.disponible && (
-            <Badge bg="secondary" className="text-uppercase">
-              Vendido
-            </Badge>
-          )}
+          <span className="fw-semibold">${item.cost} mxn</span>
         </div>
       </Card.Body>
     </Card>
