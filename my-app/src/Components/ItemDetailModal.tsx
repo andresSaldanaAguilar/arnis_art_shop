@@ -50,17 +50,15 @@ const ItemDetailModal: React.FC<ItemDetailModalProps> = ({ item, onHide }) => {
               {!item.disponible && <Badge bg="secondary">Vendido</Badge>}
             </div>
             <div className="d-flex gap-2">
-              <Button
-                variant="dark"
-                className="flex-grow-1"
-                disabled={!item.disponible || !item.purchaseLink}
-                onClick={() => {
-                  if (item.purchaseLink)
-                    window.open(item.purchaseLink, "_blank");
-                }}
+              <a
+                href={`https://ig.me/m/_arni_art_`}
+                target="_arni_art_"
+                rel="noopener noreferrer"
+                className="instagram-message-button flex-grow-1 btn btn-dark text-center"
+                style={{ textDecoration: "none" }}
               >
-                Comprar
-              </Button>
+                enviame un mensaje para hacer tu pedido
+              </a>
               <Button variant="outline-secondary" onClick={onHide}>
                 Cerrar
               </Button>

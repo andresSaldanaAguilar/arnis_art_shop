@@ -10,6 +10,7 @@ import ItemTile from "./Components/ItemTile.tsx"; // explicit extension
 import ItemDetailModal from "./Components/ItemDetailModal.tsx"; // explicit extension
 import { ItemProps } from "./interfaces/ItemProps";
 import PromoBanners from "./Components/PromoBanners.tsx"; // explicit extension
+import StickerPackImg from "./Images/stickers.jpeg";
 
 function App() {
   const maxCost = useMemo(
@@ -61,6 +62,31 @@ function App() {
             maxExistingCost={maxCost}
           />
           <Row xs={2} sm={3} md={4} lg={4} className="g-3 g-md-4">
+            {/* Promotional tile injected as first tile with image */}
+            <Col>
+              <div
+                className="h-100 border-0 shadow-sm item-tile promo-highlight-tile text-white position-relative"
+                role="note"
+                aria-label="Sticker pack gratis"
+              >
+                <div className="ratio ratio-1x1 position-relative">
+                  <img
+                    src={StickerPackImg}
+                    alt="Sticker pack incluido"
+                    className="w-100 h-100 object-fit-cover promo-img"
+                  />
+                  <div className="promo-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                    <div
+                      className="fw-bold"
+                      style={{ fontSize: "0.95rem", letterSpacing: ".5px" }}
+                    >
+                      ¡Sticker Pack Gratis!
+                    </div>
+                    <div className="small opacity-75 mt-1">En cada compra</div>
+                  </div>
+                </div>
+              </div>
+            </Col>
             {filtered.map((item) => (
               <Col key={item.title}>
                 <ItemTile item={item} onSelect={setSelected} />

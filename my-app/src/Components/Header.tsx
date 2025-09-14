@@ -11,9 +11,12 @@ const Header: React.FC = () => {
         className="border-0 shadow-sm py-3"
         style={{ backgroundColor: "#ffffff" }}
       >
-        <Container className="justify-content-center justify-content-md-between">
-          {/* Replaced placeholder with logo image */}
-          <Navbar.Brand href="#" className="m-0 d-flex align-items-center">
+        <Container className="d-flex justify-content-center">
+          {/* Centered logo image */}
+          <Navbar.Brand
+            href="#"
+            className="m-0 mx-auto d-flex align-items-center"
+          >
             <img
               src={TitleImage}
               alt="Arnis Art Shop"

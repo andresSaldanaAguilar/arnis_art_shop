@@ -1,26 +1,9 @@
 import React from "react";
-import StickersImg from "../Images/stickers.jpeg";
 
 const PromoBanners: React.FC = () => {
   return (
     <div className="promo-banners mb-4">
-      <div
-        className="promo-banner with-image"
-        role="note"
-        aria-label="Promoción paquete de stickers"
-      >
-        <img
-          src={StickersImg}
-          alt="Paquete de stickers"
-          className="promo-thumb"
-        />
-        <div className="content">
-          <span className="icon" aria-hidden="true">
-            💫
-          </span>
-          ¡Todas las compras incluyen un paquete de stickers gratis!
-        </div>
-      </div>
+      {/* Removed sticker banner; now only remaining promos */}
       <div
         className="promo-banner"
         role="note"
@@ -33,8 +16,8 @@ const PromoBanners: React.FC = () => {
       </div>
       <a
         className="promo-banner link-banner"
-        href="mailto:contacto@example.com?subject=Pedido%20Personalizado"
-        target="_blank"
+        href={`https://ig.me/m/_arni_art_`}
+        target="_arni_art_"
         rel="noopener noreferrer"
         aria-label="Quiero hacer un pedido personalizado"
       >

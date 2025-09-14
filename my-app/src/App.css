@@ -217,3 +217,31 @@ button.btn-dark:hover {
     font-size: 0.85rem;
   }
 }
+
+.promo-highlight-tile {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: linear-gradient(135deg, #ff9650, #ff623d);
+  color: #fff;
+}
+.promo-highlight-tile .ratio {
+  border-radius: inherit;
+}
+.promo-highlight-tile:hover {
+  box-shadow: 0 6px 22px -6px rgba(255, 98, 61, 0.55),
+    0 4px 12px -4px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+  transition: 0.35s;
+}
+.promo-highlight-tile .promo-img {
+  filter: brightness(0.55) saturate(1.1);
+}
+.promo-highlight-tile .promo-overlay {
+  position: absolute;
+  inset: 0;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+.promo-highlight-tile .promo-overlay .fw-bold {
+  font-weight: 600;
+}

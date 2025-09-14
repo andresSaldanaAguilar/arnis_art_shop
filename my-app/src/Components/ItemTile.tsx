@@ -26,7 +26,7 @@ const ItemTile: React.FC<ItemTileProps> = ({ item, onSelect }) => {
           {item.title}
         </Card.Title>
         <Card.Text className="text-muted small mb-2">
-          {item.dimensions} | {item.material}
+          {item.dimensions + "cm"} | {item.material}
         </Card.Text>
         <div className="d-flex justify-content-between align-items-center mt-auto">
           <span className="fw-semibold">${item.cost} mxn</span>
