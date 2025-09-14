@@ -1,8 +1,10 @@
-import Caminando from "../Images/Caminando_En_Templo_Mayor.JPG";
-import Cocinando from "../Images/Cocinando_En_Casa.JPG";
-import Mujer from "../Images/Mujer_Con_Aretes.JPG";
-import Keane from "../Images/Keane.jpg";
-import Trees from "../Images/trees.JPG";
+import Caminando from "../Images/centro.jpeg";
+import Coyotes from "../Images/coyotes.jpeg";
+import Diablito from "../Images/diablito.jpeg";
+import Tacuba from "../Images/tacuba.jpeg";
+import Tlaloc from "../Images/tlaloc.jpeg";
+import Ballena from "../Images/ballena.jpeg";
+import Urraca from "../Images/urraca.jpeg";
 import { ItemProps } from "../interfaces/ItemProps";
 
 export const item1: ItemProps = {
@@ -18,53 +20,76 @@ export const item1: ItemProps = {
 };
 
 export const item2: ItemProps = {
-  image: Cocinando,
-  title: "Cocinando en Casa",
+  image: Coyotes,
+  title: "Coyotes en la noche",
   description:
-    "Me encontré en mi casa cocinando para mí, y me pareció interesante el contraste entre el sartén y los colores vivos del tomate y el ajo, cosas tan simples pero que en conjunto crean una composición interesante y vibrante. La cocina, con sus aromas y sabores, se convirtió en un lienzo donde los ingredientes cotidianos se transformaron en arte.",
-  cost: 400,
-  material: "Óleo en papel",
+    "Caminando en el centro de coyoacan, me imagine la fuente de los coyotes en una escena nocturna con estrellas.",
+  cost: 500,
+  material: "Acrilico en papel",
   dimensions: "18x22cm",
   disponible: true,
   category: "Pintura Original",
 };
 
 export const item3: ItemProps = {
-  image: Mujer,
-  title: "Mujer con Aretes",
+  image: Tlaloc,
+  title: "Tlaloc",
   description:
-    "De manera esporádica me encuentro en Pinterest para encontrar inspiración y me encontré con una foto de una mujer con aretes que me llamó la atención. Me llamó mucho la atención el contraste de sus aretes coloridos y exageradamente grandes, de manera inmediata visualicé la pintura en mi mente, los créditos y autoría de la fotografia no pertenecen, dejo el link.",
-  cost: 600,
-  material: "Óleo en papel",
+    "Retratando una escultura de piedra prehispánica, Tlaloc es el dios de la lluvia y el agua en la mitología mexica..",
+  cost: 400,
+  material: "Acuarela y acrilico en papel",
   dimensions: "22x30",
   disponible: true,
-  reference: "https://pin.it/eUk4cQZwi",
   category: "Pintura Original",
 };
 
 export const item4: ItemProps = {
-  image: Keane,
-  title: "Keane",
+  image: Diablito,
+  title: "Diablito",
   description:
-    "Keane es mi banda favorita de la adolescencia y estuvieron haciendo tour por distintas regiones de mexico, entonces decidi hacer mi primer dibujo semi-automatico conmemorando su 20 aniversario, usando los colores de referencia que venian en la fotografia original, no fue tan sencillo pero haber logrado captar la escencia de cada integrante, los créditos y autoría de la fotografia no pertenecen, dejo el link.",
-  cost: 600,
-  material: "Dibujo automatico y marcador de alcohol",
+    "El diablito es una figura tradicional en la cultura mexicana, que representa a un ser travieso y juguetón.",
+  cost: 400,
+  material: "Oleo en papel",
   dimensions: "22x30",
   disponible: false,
   category: "Pintura Original",
 };
 
 export const item5: ItemProps = {
-  image: Trees,
-  title: "Camecuaro",
+  image: Ballena,
+  title: "Ballena",
   description:
-    "Camecuaro es un parque ubnicado en Michoacan, Mexico, y esta pintura fue un pedido de una gran amiga mia que es originaria de Michoacan y queria tener un recuerdo de su tierra, la pintura fue hecha a partir de una fotografia que ella me proporciono, y el resto estaba en mi en darle un toque personal y único a la obra, fusionando su vision fotografica con mi estilo artístico.",
-  cost: 600,
+    "La ballena es un mamífero marino de gran tamaño que habita en los océanos del mundo. Son conocidas por su inteligencia, su capacidad para comunicarse y su importancia en los ecosistemas marinos.",
+  cost: 500,
   material: "Óleo en papel",
   dimensions: "22x30",
   disponible: false,
   category: "Pintura Original",
 };
 
+export const item6: ItemProps = {
+  image: Tacuba,
+  title: "Tacuba",
+  description:
+    "En una caminata por la colonia Tacuba en la Ciudad de México, me encontré con esta vista a una catedral.",
+  cost: 700,
+  material: "Acuarela en papel",
+  dimensions: "22x30",
+  disponible: false,
+  category: "Pintura Original",
+};
+
+export const item7: ItemProps = {
+  image: Urraca,
+  title: "Urraca",
+  description:
+    "Me gusta mucho el plumaje de las urracas como cambian de color con la luz.",
+  cost: 400,
+  material: "Acuarela en papel",
+  dimensions: "22x30",
+  disponible: false,
+  category: "Pintura Original",
+};
+
 // Create an array of all items for easier importing
-export const items = [item5, item4, item1, item2, item3];
+export const items = [item5, item4, item1, item2, item3, item6, item7];
