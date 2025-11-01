@@ -39,8 +39,8 @@ function App() {
         if (filters.maxCost === "gt1000" && !(c > 1000)) return false;
       }
       if (filters.disponible !== "all") {
-        const want = filters.disponible === "true";
-        if (it.disponible !== want) return false;
+        if (filters.disponible === "true" && !it.disponible) return false;
+        if (filters.disponible === "false" && it.disponible) return false;
       }
       if (filters.search) {
         const s = filters.search.toLowerCase();
@@ -52,6 +52,7 @@ function App() {
 
   const originales = filtered.filter((i) => i.category === "Pintura Original");
   const prints = filtered.filter((i) => i.category === "Print");
+  const stickers = filtered.filter((i) => i.category === "Sticker");
 
   return (
     <div className="d-flex flex-column min-vh-100 bg-white text-dark">
@@ -112,6 +113,21 @@ function App() {
               <h6 className="text-uppercase fw-semibold small mb-2">Prints</h6>
               <Row xs={2} sm={3} md={4} lg={4} className="g-3 g-md-4">
                 {prints.map((item) => (
+                  <Col key={item.title}>
+                    <ItemTile item={item} onSelect={setSelected} />
+                  </Col>
+                ))}
+              </Row>
+            </div>
+          )}
+          {/* Sección Stickers */}
+          {stickers.length > 0 && (
+            <div className="mb-4">
+              <h6 className="text-uppercase fw-semibold small mb-2">
+                Stickers
+              </h6>
+              <Row xs={2} sm={3} md={4} lg={4} className="g-3 g-md-4">
+                {stickers.map((item) => (
                   <Col key={item.title}>
                     <ItemTile item={item} onSelect={setSelected} />
                   </Col>

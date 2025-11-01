@@ -131,7 +131,7 @@ export const itemPrint3: ItemProps = {
   category: "Print",
 };
 
-export const itemPrint4: ItemProps = {
+export const itemSticker1: ItemProps = {
   image: Stickers,
   title: "3 Sticker Pack Día de Muertos",
   description: "Pack de 3 stickers con temática del Día de Muertos.",
@@ -139,7 +139,7 @@ export const itemPrint4: ItemProps = {
   material: "Stickers vinilo mate",
   dimensions: "10x10",
   disponible: true,
-  category: "Print",
+  category: "Sticker",
 };
 
 // Create an array of all items for easier importing
@@ -154,5 +154,5 @@ export const items = [
   itemPrint1,
   itemPrint2,
   itemPrint3,
-  itemPrint4,
+  itemSticker1,
 ];

@@ -14,13 +14,7 @@ interface FiltersProps {
   maxExistingCost: number;
 }
 
-const categoryOptions = [
-  "Todas",
-  "Pintura Original",
-  "Replica",
-  "Print",
-  "Sticker",
-];
+const categoryOptions = ["Todas", "Pintura Original", "Print", "Sticker"];
 
 const Filters: React.FC<FiltersProps> = ({
   onChange,
