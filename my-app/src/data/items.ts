@@ -99,7 +99,7 @@ export const itemPrint1: ItemProps = {
   image: BellasArtes,
   title: "Palacio de Bellas Artes",
   description:
-    "Print del icónico Palacio de Bellas Artes de la Ciudad de México.",
+    "Print del icónico Palacio de Bellas Artes de la Ciudad de México de noche con noche estrellada.",
   cost: 40,
   material: "Print sobre papel mate",
   dimensions: "14x14",
@@ -109,8 +109,8 @@ export const itemPrint1: ItemProps = {
 
 export const itemPrint2: ItemProps = {
   image: Lobos,
-  title: "Lobos",
-  description: "Print artístico de lobos sobre fondo nocturno estilizado.",
+  title: "Coyotes en la noche",
+  description: "Print de los icónicos coyotes en la noche estrellada.",
   cost: 50,
   material: "Print sobre papel mate",
   dimensions: "12x17",
@@ -122,7 +122,7 @@ export const itemPrint3: ItemProps = {
   image: Xolo,
   title: "Xoloitzcuintle",
   description:
-    "Print del perro xoloitzcuintle, guardián místico en la cultura mexicana.",
+    "Print del perro xoloitzcuintle, estilo muralismo mexicano, guardián místico en la cultura mexicana.",
   cost: 40,
   material: "Print sobre papel mate",
   dimensions: "14x14",

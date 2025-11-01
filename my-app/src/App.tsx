@@ -32,6 +32,7 @@ function App() {
       // interpret cost range
       if (filters.maxCost !== "all") {
         const c = it.cost;
+        if (filters.maxCost === "lt100" && !(c < 100)) return false;
         if (filters.maxCost === "lt500" && !(c < 500)) return false;
         if (filters.maxCost === "500-1000" && !(c >= 500 && c <= 1000))
           return false;
@@ -75,7 +76,7 @@ function App() {
                   <div
                     className="h-100 border-0 shadow-sm item-tile promo-highlight-tile text-white position-relative"
                     role="note"
-                    aria-label="Sticker pack gratis"
+                    aria-label="Sticker pack gratis en compra de originales"
                   >
                     <div className="ratio ratio-1x1 position-relative">
                       <img
@@ -91,7 +92,7 @@ function App() {
                           ¡Sticker Pack Gratis!
                         </div>
                         <div className="small opacity-75 mt-1">
-                          En cada compra
+                          En cada compra de originales
                         </div>
                       </div>
                     </div>

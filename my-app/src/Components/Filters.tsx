@@ -3,7 +3,7 @@ import { Row, Col, Form, Button, Collapse } from "react-bootstrap";
 
 export interface FiltersState {
   category: string;
-  maxCost: string; // now acts as a range key: 'all' | 'lt500' | '500-1000' | 'gt1000'
+  maxCost: string; // range key: 'all' | 'lt100' | 'lt500' | '500-1000' | 'gt1000'
   disponible: string; // 'all' | 'true' | 'false'
   search: string;
 }
@@ -100,6 +100,7 @@ const Filters: React.FC<FiltersProps> = ({
                   onChange={(e) => update({ maxCost: e.target.value })}
                 >
                   <option value="all">Todos</option>
+                  <option value="lt100">Menos de $100</option>
                   <option value="lt500">Menos de $500</option>
                   <option value="500-1000">$500 - $1000</option>
                   <option value="gt1000">Más de $1000</option>
