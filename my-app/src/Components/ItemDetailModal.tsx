@@ -46,8 +46,9 @@ const ItemDetailModal: React.FC<ItemDetailModalProps> = ({ item, onHide }) => {
               </div>
             )}
             <div className="d-flex align-items-center gap-3 mb-3">
-              <span className="fs-5 fw-semibold m-0">${item.cost}</span>
-              {!item.disponible && <Badge bg="secondary">Vendido</Badge>}
+              <span className="fs-5 fw-semibold m-0">
+                {item.disponible ? `$${item.cost}` : "No disponible"}
+              </span>
             </div>
             <div className="d-flex gap-2">
               <a

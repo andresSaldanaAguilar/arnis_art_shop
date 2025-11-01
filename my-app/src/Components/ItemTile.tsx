@@ -29,7 +29,9 @@ const ItemTile: React.FC<ItemTileProps> = ({ item, onSelect }) => {
           {item.dimensions + "cm"} | {item.material}
         </Card.Text>
         <div className="d-flex justify-content-between align-items-center mt-auto">
-          <span className="fw-semibold">${item.cost} mxn</span>
+          <span className="fw-semibold">
+            {item.disponible ? `$${item.cost} mxn` : "No disponible"}
+          </span>
         </div>
       </Card.Body>
     </Card>

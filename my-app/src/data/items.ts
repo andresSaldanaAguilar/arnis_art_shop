@@ -8,6 +8,7 @@ import Urraca from "../Images/originales/urraca.jpeg";
 import BellasArtes from "../Images/prints/bellasartes.jpg";
 import Lobos from "../Images/prints/lobos.jpg";
 import Xolo from "../Images/prints/xolo.jpg";
+import Stickers from "../Images/prints/stickers.jpeg";
 import { ItemProps } from "../interfaces/ItemProps";
 
 export const item1: ItemProps = {
@@ -54,7 +55,7 @@ export const item4: ItemProps = {
   cost: 400,
   material: "Óleo en papel",
   dimensions: "18x22",
-  disponible: true,
+  disponible: false,
   category: "Pintura Original",
 };
 
@@ -90,7 +91,7 @@ export const item7: ItemProps = {
   cost: 400,
   material: "Acuarela en papel",
   dimensions: "18x27",
-  disponible: true,
+  disponible: false,
   category: "Pintura Original",
 };
 
@@ -130,6 +131,17 @@ export const itemPrint3: ItemProps = {
   category: "Print",
 };
 
+export const itemPrint4: ItemProps = {
+  image: Stickers,
+  title: "3 Sticker Pack Día de Muertos",
+  description: "Pack de 3 stickers con temática del Día de Muertos.",
+  cost: 40,
+  material: "Stickers vinilo mate",
+  dimensions: "10x10",
+  disponible: true,
+  category: "Print",
+};
+
 // Create an array of all items for easier importing
 export const items = [
   item1,
@@ -142,4 +154,5 @@ export const items = [
   itemPrint1,
   itemPrint2,
   itemPrint3,
+  itemPrint4,
 ];

@@ -89,7 +89,7 @@ function App() {
                           className="fw-bold"
                           style={{ fontSize: "0.95rem", letterSpacing: ".5px" }}
                         >
-                          ¡Sticker Pack Gratis!
+                          ¡3 Sticker Pack Día de Muertos Gratis!
                         </div>
                         <div className="small opacity-75 mt-1">
                           En cada compra de originales
