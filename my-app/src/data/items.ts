@@ -5,6 +5,9 @@ import Tacuba from "../Images/originales/tacuba.jpeg";
 import Tlaloc from "../Images/originales/tlaloc.jpeg";
 import Ballena from "../Images/originales/ballena.jpeg";
 import Urraca from "../Images/originales/urraca.jpeg";
+import BellasArtes from "../Images/prints/bellasartes.jpg";
+import Lobos from "../Images/prints/lobos.jpg";
+import Xolo from "../Images/prints/xolo.jpg";
 import { ItemProps } from "../interfaces/ItemProps";
 
 export const item1: ItemProps = {
@@ -91,5 +94,52 @@ export const item7: ItemProps = {
   category: "Pintura Original",
 };
 
+// Prints
+export const itemPrint1: ItemProps = {
+  image: BellasArtes,
+  title: "Palacio de Bellas Artes",
+  description:
+    "Print del icónico Palacio de Bellas Artes de la Ciudad de México.",
+  cost: 40,
+  material: "Print sobre papel mate",
+  dimensions: "14x14",
+  disponible: true,
+  category: "Print",
+};
+
+export const itemPrint2: ItemProps = {
+  image: Lobos,
+  title: "Lobos",
+  description: "Print artístico de lobos sobre fondo nocturno estilizado.",
+  cost: 50,
+  material: "Print sobre papel mate",
+  dimensions: "12x17",
+  disponible: true,
+  category: "Print",
+};
+
+export const itemPrint3: ItemProps = {
+  image: Xolo,
+  title: "Xoloitzcuintle",
+  description:
+    "Print del perro xoloitzcuintle, guardián místico en la cultura mexicana.",
+  cost: 40,
+  material: "Print sobre papel mate",
+  dimensions: "14x14",
+  disponible: true,
+  category: "Print",
+};
+
 // Create an array of all items for easier importing
-export const items = [item1, item2, item3, item4, item5, item6, item7];
+export const items = [
+  item1,
+  item2,
+  item3,
+  item4,
+  item5,
+  item6,
+  item7,
+  itemPrint1,
+  itemPrint2,
+  itemPrint3,
+];

@@ -1,3 +1,8 @@
+/* Section headings */
+h6.text-uppercase.fw-semibold.small {
+  letter-spacing: 0.08em;
+  color: #553726;
+}
 /* Minimalist white theme with subtle accents */
 :root {
   --accent: #e26d39; /* warm accent similar to Etsy vibe */

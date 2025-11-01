@@ -49,6 +49,9 @@ function App() {
     });
   }, [filters]);
 
+  const originales = filtered.filter((i) => i.category === "Pintura Original");
+  const prints = filtered.filter((i) => i.category === "Print");
+
   return (
     <div className="d-flex flex-column min-vh-100 bg-white text-dark">
       <Header />
@@ -61,43 +64,65 @@ function App() {
             current={filters}
             maxExistingCost={maxCost}
           />
-          <Row xs={2} sm={3} md={4} lg={4} className="g-3 g-md-4">
-            {/* Promotional tile injected as first tile with image */}
-            <Col>
-              <div
-                className="h-100 border-0 shadow-sm item-tile promo-highlight-tile text-white position-relative"
-                role="note"
-                aria-label="Sticker pack gratis"
-              >
-                <div className="ratio ratio-1x1 position-relative">
-                  <img
-                    src={StickerPackImg}
-                    alt="Sticker pack incluido"
-                    className="w-100 h-100 object-fit-cover promo-img"
-                  />
-                  <div className="promo-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
-                    <div
-                      className="fw-bold"
-                      style={{ fontSize: "0.95rem", letterSpacing: ".5px" }}
-                    >
-                      ¡Sticker Pack Gratis!
+          {/* Sección Originales */}
+          {originales.length > 0 && (
+            <div className="mb-4">
+              <h6 className="text-uppercase fw-semibold small mb-2">
+                Originales
+              </h6>
+              <Row xs={2} sm={3} md={4} lg={4} className="g-3 g-md-4">
+                <Col>
+                  <div
+                    className="h-100 border-0 shadow-sm item-tile promo-highlight-tile text-white position-relative"
+                    role="note"
+                    aria-label="Sticker pack gratis"
+                  >
+                    <div className="ratio ratio-1x1 position-relative">
+                      <img
+                        src={StickerPackImg}
+                        alt="Sticker pack incluido"
+                        className="w-100 h-100 object-fit-cover promo-img"
+                      />
+                      <div className="promo-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                        <div
+                          className="fw-bold"
+                          style={{ fontSize: "0.95rem", letterSpacing: ".5px" }}
+                        >
+                          ¡Sticker Pack Gratis!
+                        </div>
+                        <div className="small opacity-75 mt-1">
+                          En cada compra
+                        </div>
+                      </div>
                     </div>
-                    <div className="small opacity-75 mt-1">En cada compra</div>
                   </div>
-                </div>
-              </div>
-            </Col>
-            {filtered.map((item) => (
-              <Col key={item.title}>
-                <ItemTile item={item} onSelect={setSelected} />
-              </Col>
-            ))}
-            {filtered.length === 0 && (
-              <Col xs={12} className="text-center py-5 small text-muted">
-                No hay artículos que coincidan con los filtros.
-              </Col>
-            )}
-          </Row>
+                </Col>
+                {originales.map((item) => (
+                  <Col key={item.title}>
+                    <ItemTile item={item} onSelect={setSelected} />
+                  </Col>
+                ))}
+              </Row>
+            </div>
+          )}
+          {/* Sección Prints */}
+          {prints.length > 0 && (
+            <div className="mb-4">
+              <h6 className="text-uppercase fw-semibold small mb-2">Prints</h6>
+              <Row xs={2} sm={3} md={4} lg={4} className="g-3 g-md-4">
+                {prints.map((item) => (
+                  <Col key={item.title}>
+                    <ItemTile item={item} onSelect={setSelected} />
+                  </Col>
+                ))}
+              </Row>
+            </div>
+          )}
+          {filtered.length === 0 && (
+            <div className="text-center py-5 small text-muted">
+              No hay artículos que coincidan con los filtros.
+            </div>
+          )}
         </Container>
       </main>
       <Footer />
