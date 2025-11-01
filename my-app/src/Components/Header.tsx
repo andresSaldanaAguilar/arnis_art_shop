@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container } from "react-bootstrap";
-import TitleImage from "../Images/title.png"; // updated to png
+import TitleImage from "../Images/originales/title.png"; // moved to originales
 
 const Header: React.FC = () => {
   return (

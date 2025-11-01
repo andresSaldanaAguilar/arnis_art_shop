@@ -1,10 +1,10 @@
-import Caminando from "../Images/centro.jpeg";
-import Coyotes from "../Images/coyotes.jpeg";
-import Diablito from "../Images/diablito.jpeg";
-import Tacuba from "../Images/tacuba.jpeg";
-import Tlaloc from "../Images/tlaloc.jpeg";
-import Ballena from "../Images/ballena.jpeg";
-import Urraca from "../Images/urraca.jpeg";
+import Caminando from "../Images/originales/centro.jpeg";
+import Coyotes from "../Images/originales/coyotes.jpeg";
+import Diablito from "../Images/originales/diablito.jpeg";
+import Tacuba from "../Images/originales/tacuba.jpeg";
+import Tlaloc from "../Images/originales/tlaloc.jpeg";
+import Ballena from "../Images/originales/ballena.jpeg";
+import Urraca from "../Images/originales/urraca.jpeg";
 import { ItemProps } from "../interfaces/ItemProps";
 
 export const item1: ItemProps = {

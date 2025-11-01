@@ -10,7 +10,7 @@ import ItemTile from "./Components/ItemTile.tsx"; // explicit extension
 import ItemDetailModal from "./Components/ItemDetailModal.tsx"; // explicit extension
 import { ItemProps } from "./interfaces/ItemProps";
 import PromoBanners from "./Components/PromoBanners.tsx"; // explicit extension
-import StickerPackImg from "./Images/stickers.jpeg";
+import StickerPackImg from "./Images/originales/stickers.jpeg";
 
 function App() {
   const maxCost = useMemo(
