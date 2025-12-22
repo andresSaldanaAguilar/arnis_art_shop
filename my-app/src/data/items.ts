@@ -9,7 +9,10 @@ import BellasArtes from "../Images/prints/bellasartes.jpg";
 import Lobos from "../Images/prints/lobos.jpg";
 import Xolo from "../Images/prints/xolo.jpg";
 import Stickers from "../Images/prints/stickers.jpeg";
+import Lennon from "../Images/originales/lennon.jpg";
+import IglesiaDesierto from "../Images/originales/iglesiadesierto.jpg";
 import { ItemProps } from "../interfaces/ItemProps";
+import Doberman from "../Images/originales/doberman.jpg";
 
 export const item1: ItemProps = {
   image: Caminando,
@@ -115,7 +118,7 @@ export const itemPrint2: ItemProps = {
   cost: 50,
   material: "Print sobre papel mate",
   dimensions: "12x17",
-  disponible: true,
+  disponible: false,
   category: "Print",
 };
 
@@ -142,8 +145,45 @@ export const itemSticker1: ItemProps = {
   category: "Sticker",
 };
 
+export const item8: ItemProps = {
+  image: Lennon,
+  title: "Lennon",
+  description:
+    "Retrato de John Lennon, icónico músico y miembro de The Beatles, conocido por su influencia en la música y la cultura pop.",
+  cost: 400,
+  material: "Oleo en papel",
+  dimensions: "20x30",
+  disponible: true,
+  category: "Pintura Original",
+};
+
+export const item9: ItemProps = {
+  image: IglesiaDesierto,
+  title: "Iglesia en el Desierto",
+  description: "Vista de una iglesia en el desierto, capturando la tranquilidad y el aislamiento del lugar.",
+  cost: 400,
+  material: "Gouache en papel",
+  dimensions: "20x30",
+  disponible: true,
+  category: "Pintura Original",
+};
+
+export const item10: ItemProps = {
+  image: Doberman,
+  title: "El mejor amigo del hombre",
+  description: "Retrato de un doberman, una raza de perro conocida por su lealtad y valentía.",
+  cost: 450,
+  material: "Acrilico y plumon en papel fabriano",
+  dimensions: "20x30",
+  disponible: true,
+  category: "Pintura Original",
+};
+
 // Create an array of all items for easier importing
 export const items = [
+  item10,
+  item9,
+  item8,  
   item1,
   item2,
   item3,
