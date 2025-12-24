@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/arnis_art_shop/static/css/main.3bf431a8.css",
-    "main.js": "/arnis_art_shop/static/js/main.5033cf77.js",
+    "main.js": "/arnis_art_shop/static/js/main.446f67c7.js",
     "static/media/iglesiadesierto.jpg": "/arnis_art_shop/static/media/iglesiadesierto.fff335fdc1b83da72374.jpg",
     "static/media/doberman.jpg": "/arnis_art_shop/static/media/doberman.d300c2a06b82513d7829.jpg",
     "static/media/lennon.jpg": "/arnis_art_shop/static/media/lennon.4c4ed1c8053aae97c841.jpg",
@@ -16,13 +16,13 @@
     "static/media/ballena.jpeg": "/arnis_art_shop/static/media/ballena.f9beeec04dc7ce84bd29.jpeg",
     "static/media/urraca.jpeg": "/arnis_art_shop/static/media/urraca.b98ff77b1424319c2658.jpeg",
     "static/media/stickers.jpeg": "/arnis_art_shop/static/media/stickers.3fd54a742b4bca689371.jpeg",
-    "static/media/title.png": "/arnis_art_shop/static/media/title.ed031fe480c7aced081f.png",
+    "static/media/title.png": "/arnis_art_shop/static/media/title.a670b67c278989c79671.png",
     "index.html": "/arnis_art_shop/index.html",
     "main.3bf431a8.css.map": "/arnis_art_shop/static/css/main.3bf431a8.css.map",
-    "main.5033cf77.js.map": "/arnis_art_shop/static/js/main.5033cf77.js.map"
+    "main.446f67c7.js.map": "/arnis_art_shop/static/js/main.446f67c7.js.map"
   },
   "entrypoints": [
     "static/css/main.3bf431a8.css",
-    "static/js/main.5033cf77.js"
+    "static/js/main.446f67c7.js"
   ]
 }
