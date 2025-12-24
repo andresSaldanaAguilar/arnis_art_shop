@@ -34,7 +34,7 @@ export const item2: ItemProps = {
   cost: 500,
   material: "Acrílico en papel",
   dimensions: "25x20",
-  disponible: true,
+  disponible: false,
   category: "Pintura Original",
 };
 
@@ -118,7 +118,7 @@ export const itemPrint2: ItemProps = {
   cost: 50,
   material: "Print sobre papel mate",
   dimensions: "12x17",
-  disponible: false,
+  disponible: true,
   category: "Print",
 };
 
