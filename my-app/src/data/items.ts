@@ -184,7 +184,7 @@ export const item10: ItemProps = {
 
 export const item11: ItemProps = {
   image: OaxLand,
-  title: "Oax Land",
+  title: "Paisaje Oaxaqueño",
   description: "Paisaje tomado desde una ventana del museo de las culturas de Oaxaca.",
   cost: 600,
   material: "Oleo en papel con marco colgable/reclinable",
@@ -195,7 +195,7 @@ export const item11: ItemProps = {
 
 export const item12: ItemProps = {
   image: OaxScult,
-  title: "Oax Sculpt",
+  title: "Escultura en fachada Oaxaqueña",
   description: "Escultura de ornamento en una fachada en el centro histórico de Oaxaca.", 
   cost: 600,
   material: "Oleo en papel con marco colgable/reclinable",
@@ -206,7 +206,7 @@ export const item12: ItemProps = {
 
 export const item13: ItemProps = {
   image: Rome,
-  title: "Rome",
+  title: "Columna Romana",
   description: "Columna grecorromana, inspirada en una columna en el centro de roma.",
   cost: 600,
   material: "Oleo en papel con marco colgable/reclinable",
