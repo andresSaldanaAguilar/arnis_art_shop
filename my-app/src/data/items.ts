@@ -13,6 +13,9 @@ import Lennon from "../Images/originales/lennon.jpg";
 import IglesiaDesierto from "../Images/originales/iglesiadesierto.jpg";
 import { ItemProps } from "../interfaces/ItemProps";
 import Doberman from "../Images/originales/doberman.jpg";
+import OaxLand from "../Images/originales/oax_land.jpg";
+import OaxScult from "../Images/originales/oax_sculpt.jpg";
+import Rome from "../Images/originales/rome.jpg";
 
 export const item1: ItemProps = {
   image: Caminando,
@@ -179,8 +182,46 @@ export const item10: ItemProps = {
   category: "Pintura Original",
 };
 
+export const item11: ItemProps = {
+  image: OaxLand,
+  title: "Oax Land",
+  description: "Paisaje tomado desde una ventana del museo de las culturas de Oaxaca.",
+  cost: 600,
+  material: "Oleo en papel con marco colgable/reclinable",
+  dimensions: "27x22",
+  disponible: true,
+  category: "Pintura Original",
+};
+
+export const item12: ItemProps = {
+  image: OaxScult,
+  title: "Oax Sculpt",
+  description: "Escultura de ornamento en una fachada en el centro histórico de Oaxaca.", 
+  cost: 600,
+  material: "Oleo en papel con marco colgable/reclinable",
+  dimensions: "27x22",
+  disponible: true,
+  category: "Pintura Original",
+};
+
+export const item13: ItemProps = {
+  image: Rome,
+  title: "Rome",
+  description: "Columna grecorromana, inspirada en una columna en el centro de roma.",
+  cost: 600,
+  material: "Oleo en papel con marco colgable/reclinable",
+  dimensions: "27x22",
+  disponible: true,
+  category: "Pintura Original",
+};
+
+
+
 // Create an array of all items for easier importing
 export const items = [
+  item13,
+  item12,
+  item11,
   item10,
   item9,
   item8,  
