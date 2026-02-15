@@ -1,3 +1,21 @@
+/* Loading container */
+.loading-container {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fade-in for content after loading */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeIn 0.35s ease-out;
+}
+
 /* Section headings */
 h6.text-uppercase.fw-semibold.small {
   letter-spacing: 0.08em;

@@ -19,6 +19,8 @@ const ItemTile: React.FC<ItemTileProps> = ({ item, onSelect }) => {
           src={item.image}
           alt={item.title}
           className="object-fit-cover"
+          referrerPolicy="no-referrer"
+          loading="lazy"
         />
       </div>
       <Card.Body className="d-flex flex-column p-3">

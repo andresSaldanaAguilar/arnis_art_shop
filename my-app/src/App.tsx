@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
 import "./App.css";
-import { items } from "./data/items.ts"; // explicit extension
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Spinner, Alert } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header.tsx"; // explicit extension
 import Footer from "./Components/Footer.tsx"; // explicit extension
@@ -10,12 +9,19 @@ import ItemTile from "./Components/ItemTile.tsx"; // explicit extension
 import ItemDetailModal from "./Components/ItemDetailModal.tsx"; // explicit extension
 import { ItemProps } from "./interfaces/ItemProps";
 import PromoBanners from "./Components/PromoBanners.tsx"; // explicit extension
-import StickerPackImg from "./Images/originales/stickers.jpeg";
+import { useItems } from "./hooks/useItems.ts";
+import { getGoogleDriveImageUrl, STICKER_PROMO_IMAGE_FILE_ID } from "./config.ts";
 
 function App() {
+  const { items, loading, error } = useItems();
+
+  const stickerPromoImg = STICKER_PROMO_IMAGE_FILE_ID
+    ? getGoogleDriveImageUrl(STICKER_PROMO_IMAGE_FILE_ID)
+    : undefined;
+
   const maxCost = useMemo(
     () => items.reduce((m, i) => Math.max(m, i.cost), 0),
-    []
+    [items]
   );
   const [filters, setFilters] = useState<FiltersState>({
     category: "Todas",
@@ -48,7 +54,7 @@ function App() {
       }
       return true;
     });
-  }, [filters]);
+  }, [filters, items]);
 
   const originales = filtered.filter((i) => i.category === "Pintura Original");
   const prints = filtered.filter((i) => i.category === "Print");
@@ -61,6 +67,30 @@ function App() {
         <Container>
           {/* Promo Banners */}
           <PromoBanners />
+
+          {/* Loading state */}
+          {loading && (
+            <div className="loading-container text-center py-5">
+              <Spinner
+                animation="border"
+                role="status"
+                variant="secondary"
+                className="mb-3"
+              />
+              <p className="text-muted small">Cargando artículos...</p>
+            </div>
+          )}
+
+          {/* Error state */}
+          {error && (
+            <Alert variant="danger" className="text-center">
+              <Alert.Heading className="h6">Error al cargar artículos</Alert.Heading>
+              <p className="mb-0 small">{error}</p>
+            </Alert>
+          )}
+
+          {/* Content (only when not loading and no error) */}
+          {!loading && !error && (<>
           <Filters
             onChange={setFilters}
             current={filters}
@@ -81,9 +111,11 @@ function App() {
                   >
                     <div className="ratio ratio-1x1 position-relative">
                       <img
-                        src={StickerPackImg}
+                        src={stickerPromoImg}
                         alt="Sticker pack incluido"
                         className="w-100 h-100 object-fit-cover promo-img"
+                        referrerPolicy="no-referrer"
+                        loading="lazy"
                       />
                       <div className="promo-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
                         <div
@@ -140,6 +172,7 @@ function App() {
               No hay artículos que coincidan con los filtros.
             </div>
           )}
+          </>)}
         </Container>
       </main>
       <Footer />

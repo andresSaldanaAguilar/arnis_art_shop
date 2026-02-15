@@ -6,6 +6,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "cra-template-typescript": "1.2.0",
+    "papaparse": "^5.5.3",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@types/papaparse": "^5.5.2",
     "gh-pages": "^6.3.0"
   }
 }

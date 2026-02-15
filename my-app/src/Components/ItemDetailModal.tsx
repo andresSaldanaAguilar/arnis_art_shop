@@ -19,6 +19,7 @@ const ItemDetailModal: React.FC<ItemDetailModalProps> = ({ item, onHide }) => {
                 src={item.image}
                 alt={item.title}
                 className="w-100 h-100 object-fit-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
