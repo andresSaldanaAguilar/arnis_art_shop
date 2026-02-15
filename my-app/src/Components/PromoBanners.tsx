@@ -3,6 +3,19 @@ import React from "react";
 const PromoBanners: React.FC = () => {
   return (
     <div className="promo-banners mb-4">
+      {/* Showroom banner */}
+      <a
+        className="promo-banner link-banner"
+        href="https://maps.app.goo.gl/f3anRwCBiNPnjm6P6"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visítanos en showroom Clavería"
+      >
+        <span className="icon" aria-hidden="true">
+          📍
+        </span>
+        ¡Disponibles en showroom Clavería! Mándame mensaje para confirmar existencia en tienda
+      </a>
       {/* Removed sticker banner; now only remaining promos */}
       <div
         className="promo-banner"
